@@ -71,18 +71,18 @@ slider.select(".background")
   .attr("height", height);
 
 var handle = slider.append("g")
-  .attr("class", "handle")
+  .attr("class", "handle");
 
 handle.append("path")
   .attr("transform", "translate(0," + height / 2 + ")")
-  .attr("d", "M 0 -20 V 20")
+  .attr("d", "M 0 -20 V 20");
 
 handle.append('text')
   .text(startingValue)
   .attr("transform", "translate(" + (-18) + " ," + (height / 2 - 25) + ")");
 
 slider
-  .call(brush.event)
+  .call(brush.event);
 
 function brushed() {
   var value = brush.extent()[0];
