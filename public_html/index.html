@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet_test1</title>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+</head>
+<body style="width: 100%;height: 100%;margin:0;">
+    <div id="map" style="width: 80%;height: 80%;"></div>
+    <script type="text/javascript">
+        // get the data url, x&y means the coordinates, z means zoom
+        var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            osm = L.tileLayer(osmUrl, {maxZoom: 17});
+        //create map
+        var map = L.map('map');
+        map.setView([40.445019, -79.977194], 13);
+        map.addLayer(osm);
+
+        //create marker_51_number
+        var marker_1000 = new L.Marker(new L.latLng(40.441326, -80.004679),riseOnHover = true);
+        map.addLayer(marker_1000);
+        
+        var marker_1001 = new L.Marker(new L.latLng(40.440877, -80.00308));
+        
+        map.addLayer(marker_1001);
+        
+        var marker_1002 = new L.Marker(new L.latLng(40.43903, -80.00186));
+        map.addLayer(marker_1002);
+        
+        var marker_1003 = new L.Marker(new L.latLng(40.4372, -80.000375));
+        map.addLayer(marker_1003);
+        
+        var marker_1004 = new L.Marker(new L.latLng(40.4358002, -79.9968767));
+        map.addLayer(marker_1004);
+        
+        var marker_1005 = new L.Marker(new L.latLng(40.4387769, -79.9974405));
+        map.addLayer(marker_1005);
+        
+        var marker_1006 = new L.Marker(new L.latLng(40.4400542, -79.9951376));
+        map.addLayer(marker_1006);
+        
+        var marker_1007 = new L.Marker(new L.latLng(40.437643,-79.986695));
+        map.addLayer(marker_1007);
+        
+        var marker_1008 = new L.Marker(new L.latLng(40.440368, -79.988636));
+        map.addLayer(marker_1008);
+        
+        var marker_1009 = new L.Marker(new L.latLng(40.445844, -79.99238));
+        map.addLayer(marker_1009);
+        
+        var marker_1010 = new L.Marker(new L.latLng(40.444614, -79.9958114));
+        map.addLayer(marker_1010);
+        
+        var marker_1011 = new L.Marker(new L.latLng(40.4448352, -80.0007479));
+        map.addLayer(marker_1011);
+        
+        var marker_1012 = new L.Marker(new L.latLng(40.445834, -80.008882));
+        map.addLayer(marker_1012);
+        
+        var marker_1013 = new L.Marker(new L.latLng(40.447571, -80.003964));
+        map.addLayer(marker_1013);
+        
+        var marker_1014 = new L.Marker(new L.latLng(40.450595, -80.013204));
+        map.addLayer(marker_1014);
+        
+        var marker_1015 = new L.Marker(new L.latLng(40.45509087, -80.0063467));
+        map.addLayer(marker_1015);
+        
+        var marker_1016 = new L.Marker(new L.latLng(40.449631, -79.985893));
+        map.addLayer(marker_1016);
+        
+        var marker_1017 = new L.Marker(new L.latLng(40.452124, -79.983543));
+        map.addLayer(marker_1017);
+        
+        var marker_1018 = new L.Marker(new L.latLng(40.466103, -79.964628));
+        map.addLayer(marker_1018);
+        
+        var marker_1019 = new L.Marker(new L.latLng(40.470188, -79.9603066));
+        map.addLayer(marker_1019);
+        
+        var marker_1020 = new L.Marker(new L.latLng(40.465893, -79.954417));
+        map.addLayer(marker_1020);
+        
+        var marker_1021 = new L.Marker(new L.latLng(40.462769, -79.950867));
+        map.addLayer(marker_1021);
+        
+        var marker_1022 = new L.Marker(new L.latLng(40.4599487, -79.9456124));
+        map.addLayer(marker_1022);
+        
+        var marker_1023 = new L.Marker(new L.latLng(40.456505, -79.939362));
+        map.addLayer(marker_1023);
+        
+        var marker_1024 = new L.Marker(new L.latLng(40.458714, -79.933483));
+        map.addLayer(marker_1024);
+        
+        var marker_1025 = new L.Marker(new L.latLng(40.464443, -79.933188));
+        map.addLayer(marker_1025);
+        
+        var marker_1026 = new L.Marker(new L.latLng(40.460982, -79.926302));
+        map.addLayer(marker_1026);
+        
+        var marker_1027 = new L.Marker(new L.latLng(40.458972, -79.922023));
+        map.addLayer(marker_1027);
+        
+        var marker_1028 = new L.Marker(new L.latLng(40.455821, -79.915248));
+        map.addLayer(marker_1028);
+        
+        var marker_1029 = new L.Marker(new L.latLng(40.4573211, -79.9248275));
+        map.addLayer(marker_1029);
+        
+        var marker_1030 = new L.Marker(new L.latLng(40.4589116, -79.9290211));
+        map.addLayer(marker_1030);
+        
+        var marker_1031 = new L.Marker(new L.latLng(40.45628, -79.930962));
+        map.addLayer(marker_1031);
+        
+        var marker_1032 = new L.Marker(new L.latLng(40.452621, -79.928637));
+        map.addLayer(marker_1032);
+        
+        var marker_1033 = new L.Marker(new L.latLng(40.45177, -79.932324));
+        map.addLayer(marker_1033);
+        
+        var marker_1034 = new L.Marker(new L.latLng(40.448419, -79.947401));
+        map.addLayer(marker_1034);
+        
+        var marker_1035 = new L.Marker(new L.latLng(40.446744, -79.950881));
+        map.addLayer(marker_1035);
+        
+        var marker_1036 = new L.Marker(new L.latLng(40.442398, -79.951479));
+        map.addLayer(marker_1036);
+        
+        var marker_1037 = new L.Marker(new L.latLng(40.441032, -79.948042));
+        map.addLayer(marker_1037);
+        
+        var marker_1038 = new L.Marker(new L.latLng(40.434338, -79.951877));
+        map.addLayer(marker_1038);
+        
+        var marker_1039 = new L.Marker(new L.latLng(40.437987, -79.95367));
+        map.addLayer(marker_1039);
+        
+        var marker_1040 = new L.Marker(new L.latLng(40.4446284, -79.9550156));
+        map.addLayer(marker_1040);
+        
+        var marker_1041 = new L.Marker(new L.latLng(40.442325, -79.957604));
+        map.addLayer(marker_1041);
+        
+        var marker_1042 = new L.Marker(new L.latLng(40.445019, -79.977194));
+        map.addLayer(marker_1042);
+        
+        var marker_1043 = new L.Marker(new L.latLng(40.438876, -79.960179));
+        map.addLayer(marker_1043);
+        
+        var marker_1044 = new L.Marker(new L.latLng(40.435986, -79.956942));
+        map.addLayer(marker_1044);
+        
+        var marker_1045 = new L.Marker(new L.latLng(40.428658, -79.965228));
+        map.addLayer(marker_1045);
+        
+        var marker_1046 = new L.Marker(new L.latLng(40.42802, -79.969799));
+        map.addLayer(marker_1046);
+        
+        var marker_1047 = new L.Marker(new L.latLng(40.428576, -79.974559));
+        map.addLayer(marker_1047);
+        
+        var marker_1048 = new L.Marker(new L.latLng(40.429338, -79.980684));
+        map.addLayer(marker_1048);
+        
+        var marker_1049 = new L.Marker(new L.latLng(40.4285528, -79.9863687));
+        map.addLayer(marker_1049);
+        
+        
+        
+
+        //创建infowindow
+        marker_1000.bindPopup('<b>Liberty & Stanwix</b><br>	RackQnty: 16');
+        
+        marker_1001.bindPopup('<b>Forbes Ave & Market Sq</b><br> RackQnty: 19');
+        
+        marker_1002.bindPopup('<b>Third & Wood</b><br> RackQnty: 15');
+        
+        marker_1003.bindPopup('<b>First Ave & Smithfield St</b><br> RackQnty: 15');
+        
+        marker_1004.bindPopup('<b>First Ave & B St</b><br> RackQnty: 15');
+        
+        marker_1005.bindPopup('<b>Forbes Ave & Grant St</b><br> RackQnty: 19');
+        
+        marker_1006.bindPopup('<b>Ross St & Sixth Ave</b><br> RackQnty: 21');
+        
+        marker_1007.bindPopup('<b>Stevenson St & Forbes Ave</b><br> RackQnty: 19');
+        
+        marker_1008.bindPopup('<b>Centre Ave and Consol</b><br> RackQnty: 35');
+        
+        marker_1009.bindPopup('<b>12th St & Penn Ave</b><br> RackQnty: 19');
+        
+        marker_1010.bindPopup('<b>10th St & Penn Ave</b><br> RackQnty: 15');
+        
+        marker_1011.bindPopup('<b>Fort Duquesne Blvd & 7th</b><br> RackQnty: 15');
+        
+        marker_1012.bindPopup('<b>North Shore Trail & Ft Duquesne Bridge</b><br> RackQnty: 35');
+        
+        marker_1013.bindPopup('<b>Isabella St & Federal St</b><br> RackQnty: 15');
+        
+        marker_1014.bindPopup('<b>Ridge Ave & Brighton Rd (CCAC)</b><br> RackQnty: 12');
+        
+        marker_1015.bindPopup('<b>Federal St & E North Ave</b><br> RackQnty: 19');
+        
+        marker_1016.bindPopup('<b>17th St & Penn Ave</b><br> RackQnty: 19');
+        
+        marker_1017.bindPopup('<b>21st St & Penn Ave</b><br> RackQnty: 21');
+        
+        marker_1018.bindPopup('<b>37th St & Butler St</b><br> RackQnty: 17');
+        
+        marker_1019.bindPopup('<b>42nd St & Butler St</b><br> RackQnty: 15');
+        
+        marker_1020.bindPopup('<b>42nd St & Penn Ave</b><br> RackQnty: 19');
+        
+        marker_1021.bindPopup('<b>Taylor St & Liberty Ave</b><br> RackQnty: 15');
+        
+        marker_1022.bindPopup('<b>Liberty Ave & S Millvale</b><br> RackQnty: 21');
+        
+        marker_1023.bindPopup('<b>Liberty Ave & Baum Blvd</b><br> RackQnty: 17');
+        
+        marker_1024.bindPopup('<b>S Negley Ave & Baum Blvd</b><br> RackQnty: 15');
+        
+        marker_1025.bindPopup('<b>Penn Ave & N Fairmount St</b><br> RackQnty: 13');
+        
+        marker_1026.bindPopup('<b>S Whitfield St & Baum Blvd</b><br> RackQnty: 19');
+        
+        marker_1027.bindPopup('<b>Shady Ave & Ellsworth Ave</b><br> RackQnty: 19');
+        
+        marker_1028.bindPopup('<b>Penn Ave & Putnam St (Bakery Sq)</b><br> RackQnty: 19');
+        
+        marker_1029.bindPopup('<b>Alder St & S Higland Ave</b><br> RackQnty: 19');
+        
+        marker_1030.bindPopup('<b>S Euclid Ave & Centre Ave</b><br> RackQnty: 12');
+        
+        marker_1031.bindPopup('<b>Maryland Ave & Ellsworth Ave</b><br> RackQnty: 19');
+        
+        marker_1032.bindPopup('<b>Maryland Ave & Walnut St</b><br> RackQnty: 15');
+        
+        marker_1033.bindPopup('<b>Ivy St & Walnut St</b><br> RackQnty: 19');
+        
+        marker_1034.bindPopup('<b>Ellsworth Ave & N Neville St</b><br> RackQnty: 15');
+        
+        marker_1035.bindPopup('<b>Fifth Ave & S Dithridge St</b><br> RackQnty: 19');
+        
+        marker_1036.bindPopup('<b>Schenley Dr at Schenley Plaza</b><br> RackQnty: 19');
+        
+        marker_1037.bindPopup('<b>Frew St & Schenley Dr</b><br> RackQnty: 20');
+        
+        marker_1038.bindPopup('<b>Boulevard of the Allies & Parkview Ave</b><br> RackQnty: 19');
+        
+        marker_1039.bindPopup('<b>Atwood St & Bates</b><br> RackQnty: 19');
+        
+        marker_1040.bindPopup('<b>Bigelow Blvd & Fifth Ave</b><br> RackQnty: 21');
+        
+        marker_1041.bindPopup('<b>Fifth Ave & S Bouquet</b><br> RackQnty: 19');
+        
+        marker_1042.bindPopup('<b>Centre Ave & Kirkpatrick St</b><br> RackQnty: 12');
+        
+        marker_1043.bindPopup('<b>Coltart Ave & Forbes Ave</b><br> RackQnty: 15');
+        
+        marker_1044.bindPopup('<b>Zulema St & Coltart Ave</b><br> RackQnty: 19');
+        
+        marker_1045.bindPopup('<b>S 27th & Tunnel Blvd</b><br> RackQnty: 19');
+        
+        marker_1046.bindPopup('<b>S 25th St & E Carson St</b><br> RackQnty: 18');
+        
+        marker_1047.bindPopup('<b>S 22nd St & E Carson St</b><br> RackQnty: 20');
+        
+        marker_1048.bindPopup('<b>S 18th St & Sidney St</b><br> RackQnty: 16');
+        
+        marker_1049.bindPopup('<b>S 12th St & E Carson St</b><br> RackQnty: 19');
+        
+    </script>
+</body>
+</html>
