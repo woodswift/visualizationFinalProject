@@ -38,27 +38,27 @@ var svg = d3.select("body").append("svg")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 svg.append("g")
-  .attr("class", "x axis")
-// put in middle of screen
-.attr("transform", "translate(0," + height / 2 + ")")
-// introduce axis
-.call(d3.svg.axis()
-  .scale(timeScale)
-  .orient("bottom")
- // .ticks(10)
-  .tickFormat(function(d) {
-    return formatDate(d);
-  })
-  .tickSize(0)
-  .tickPadding(8)
-  //.tickValues([timeScale.domain()[0], timeScale.domain()[1]])
-  )
-  .select(".domain")
-  .select(function() {
-    console.log(this);
-    return this.parentNode.appendChild(this.cloneNode(true));
-  })
-  .attr("class", "halo");
+    .attr("class", "x axis")
+    // put in middle of screen
+    .attr("transform", "translate(0," + height / 2 + ")")
+    // introduce axis
+    .call(d3.svg.axis()
+        .scale(timeScale)
+        .orient("bottom")
+        // .ticks(10)
+        .tickFormat(function(d) {
+            return formatDate(d);
+        })
+        .tickSize(0)
+        .tickPadding(8)
+        //.tickValues([timeScale.domain()[0], timeScale.domain()[1]])
+    )
+    .select(".domain")
+    .select(function() {
+        console.log(this);
+        return this.parentNode.appendChild(this.cloneNode(true));
+    })
+    .attr("class", "halo");
 
 var slider = svg.append("g")
   .attr("class", "slider")
