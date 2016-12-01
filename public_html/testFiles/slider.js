@@ -13,14 +13,14 @@ var margin = {
 
 // scale function
 var timeScale = d3.time.scale()
-  .domain([new Date('2015-07-01 00:00:00'), new Date('2016-04-01')])
+  .domain([new Date('2015-07-01 00:00:00'),new Date('2015-07-03 00:00:00'),new Date('2015-07-05 00:00:00')])
   .range([0, width])
   .clamp(true);
 
 
 // initial value
-var startValue = timeScale(new Date('2015-07-20'));
-startingValue = new Date('2015-07-20');
+var startValue = timeScale(new Date('2015-07-02'));
+startingValue = new Date('2015-07-02');
 
 //////////
 
