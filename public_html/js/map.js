@@ -11,9 +11,7 @@ createMap([]);
 //add & refresh markers
 function createMap(arrHighlight){
     d3.json("./dataFile/Station_info.json",function(arr){
-        //set all station' position list
-        // arr = [{"id":"1001","latitude":40.428658,"longitude":-79.965228},{"id":"1002","latitude":40.440877,"longitude":-80.00308},{"id":"1003","latitude":40.444614,"longitude":-79.9958114}];
-        console.log(arr);
+        
         //set highlight icon
         var myIcon = L.icon({iconUrl:'./img/marker-icon-2x_red.png',
                             iconAnchor: [12,41],

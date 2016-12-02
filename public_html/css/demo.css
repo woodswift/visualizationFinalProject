@@ -2,8 +2,50 @@
     Created on : Dec 1, 2016, 7:26:58 PM
     Author     : babylu
 */
+.left{
+    width: 65%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+}
+
+.right{
+    width: 34%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
 
 #slider{
     margin-top: 20px;
     margin-left: 5px;
 }
+
+#chart{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Garamond;
+}
+
+#tab{
+    margin-left: 4px;
+}
+
+#tab div{
+    display: inline-block;
+    width: 140px;
+    height: 20px;
+    border: 1px solid black;
+    float: left;
+}
+
+.tabSelected{
+    background-color: grey;
+}
+
+.tabUnselected{
+    background-color: lightgrey;
+}
+

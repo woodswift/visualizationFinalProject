@@ -2,22 +2,30 @@
 <html style="width: 100%;height: 100%;">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visualization Final Demo</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="./css/d3.slider.css"/>
         <link rel="stylesheet" type="text/css" href="./css/demo.css"/>
     </head>
-    <body style="width: 100%;height: 100%;margin:0;background-color: #f2efe9;">
-        <div id="text"></div>
-        <div style="width: 65%;height: 100%; display: inline-block;margin-right: 5px;">
+    <body style="width: 1280px;height:700px;margin:0;background-color: #f2efe9;">
+        <input id="weekNum" type="hidden" value="1">
+        <input id="dataFileType" type="hidden" value="1">
+        <div class="left">
             <div id="slider" style="width: 100%;height: 15%;"></div>
             <div id="map" style="width: 100%;height: 85%;"></div>
         </div>
-        <div style="width: 34%;height: 100%; display: inline-block;">
-            <div id="chart" style="width: 100%;height: 60%;"></div>
+        <div class="right">
+            <div id="chart" style="width: 100%;height: 60%;">
+                <p style="font-size: 20px;font-weight:bold;margin-bottom: 10px;">Use tab to change type(Week/Month/Quarter)</p>
+                <div id="tab">
+                    <div id="weekTab" val="1" style="border-right: 0px;" class="tabSelected">Week</div>
+                    <div id="monthTab" val="2" style="border-right: 0px;" class="tabUnselected">Month</div>
+                    <div id="quarterTab" val="3" class="tabUnselected">Quarter</div> 
+                </div>
+            </div>
             <div id="control" style="width: 100%;height: 40%;"></div>
         </div>
         <script type="text/javascript" src="./js/jquery-2.1.4.js"></script>
@@ -26,5 +34,6 @@
         <script type="text/javascript" src="./js/map.js"></script>
         <script type="text/javascript" src="./js/d3.slider.js"></script>
         <script type="text/javascript" src="./js/slider.js"></script>
+        <script type="text/javascript" src="./js/controlTab.js"></script>
     </body>
 </html>
