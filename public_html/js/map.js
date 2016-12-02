@@ -11,7 +11,9 @@ function createMap(arrHighlight){
     //set all station' position list
     var arr = [{"id":"1001","latitude":40.428658,"longitude":-79.965228},{"id":"1002","latitude":40.440877,"longitude":-80.00308},{"id":"1003","latitude":40.444614,"longitude":-79.9958114}];
     //set highlight icon
-    var myIcon = L.icon({iconUrl:'./img/marker-icon-2x_red.png',iconSize: [25,41]});
+    var myIcon = L.icon({iconUrl:'./img/marker-icon-2x_red.png',iconAnchor: [12,41],iconSize: [25,41]});
+    
+//    var myIcon2 = L.icon({iconUrl:'./img/marker-icon-2x.png',iconSize: [25,41]});
     
     //clear old marker
     $(".leaflet-marker-pane").empty();
