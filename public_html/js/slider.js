@@ -20,11 +20,11 @@ var slider = d3.slider().min(1).max(week_index.length).tickValues(week_index).st
 d3.select('#slider').call(slider)
     .on("click", function() {
         d3.select('#text').text(self.slider.value());
-        createMap(["1001","1002"]);
+        createMap([1001,1002]);
     })
     .on("drag", function() {
         d3.select('#text').text(self.slider.value());
-        createMap(["1001","1002"]);
+        createMap([1001,1002]);
     });
 
 
