@@ -1,0 +1,1202 @@
+[
+ {
+   "FIELD1": 1,
+   "StationId": 1045,
+   "Week": 1,
+   "Bike_in": 190
+ },
+ {
+   "FIELD1": 2,
+   "StationId": 1000,
+   "Week": 1,
+   "Bike_in": 188
+ },
+ {
+   "FIELD1": 3,
+   "StationId": 1001,
+   "Week": 1,
+   "Bike_in": 136
+ },
+ {
+   "FIELD1": 4,
+   "StationId": 1017,
+   "Week": 1,
+   "Bike_in": 100
+ },
+ {
+   "FIELD1": 5,
+   "StationId": 1013,
+   "Week": 1,
+   "Bike_in": 86
+ },
+ {
+   "FIELD1": 51,
+   "StationId": 1001,
+   "Week": 2,
+   "Bike_in": 199
+ },
+ {
+   "FIELD1": 52,
+   "StationId": 1045,
+   "Week": 2,
+   "Bike_in": 189
+ },
+ {
+   "FIELD1": 53,
+   "StationId": 1010,
+   "Week": 2,
+   "Bike_in": 158
+ },
+ {
+   "FIELD1": 54,
+   "StationId": 1013,
+   "Week": 2,
+   "Bike_in": 153
+ },
+ {
+   "FIELD1": 55,
+   "StationId": 1017,
+   "Week": 2,
+   "Bike_in": 139
+ },
+ {
+   "FIELD1": 101,
+   "StationId": 1001,
+   "Week": 3,
+   "Bike_in": 153
+ },
+ {
+   "FIELD1": 102,
+   "StationId": 1017,
+   "Week": 3,
+   "Bike_in": 144
+ },
+ {
+   "FIELD1": 103,
+   "StationId": 1045,
+   "Week": 3,
+   "Bike_in": 143
+ },
+ {
+   "FIELD1": 104,
+   "StationId": 1010,
+   "Week": 3,
+   "Bike_in": 142
+ },
+ {
+   "FIELD1": 105,
+   "StationId": 1000,
+   "Week": 3,
+   "Bike_in": 128
+ },
+ {
+   "FIELD1": 151,
+   "StationId": 1045,
+   "Week": 4,
+   "Bike_in": 188
+ },
+ {
+   "FIELD1": 152,
+   "StationId": 1000,
+   "Week": 4,
+   "Bike_in": 184
+ },
+ {
+   "FIELD1": 153,
+   "StationId": 1010,
+   "Week": 4,
+   "Bike_in": 176
+ },
+ {
+   "FIELD1": 154,
+   "StationId": 1001,
+   "Week": 4,
+   "Bike_in": 174
+ },
+ {
+   "FIELD1": 155,
+   "StationId": 1017,
+   "Week": 4,
+   "Bike_in": 162
+ },
+ {
+   "FIELD1": 201,
+   "StationId": 1001,
+   "Week": 5,
+   "Bike_in": 334
+ },
+ {
+   "FIELD1": 202,
+   "StationId": 1000,
+   "Week": 5,
+   "Bike_in": 211
+ },
+ {
+   "FIELD1": 203,
+   "StationId": 1045,
+   "Week": 5,
+   "Bike_in": 188
+ },
+ {
+   "FIELD1": 204,
+   "StationId": 1017,
+   "Week": 5,
+   "Bike_in": 185
+ },
+ {
+   "FIELD1": 205,
+   "StationId": 1010,
+   "Week": 5,
+   "Bike_in": 175
+ },
+ {
+   "FIELD1": 251,
+   "StationId": 1045,
+   "Week": 6,
+   "Bike_in": 221
+ },
+ {
+   "FIELD1": 252,
+   "StationId": 1001,
+   "Week": 6,
+   "Bike_in": 189
+ },
+ {
+   "FIELD1": 253,
+   "StationId": 1000,
+   "Week": 6,
+   "Bike_in": 166
+ },
+ {
+   "FIELD1": 254,
+   "StationId": 1012,
+   "Week": 6,
+   "Bike_in": 149
+ },
+ {
+   "FIELD1": 255,
+   "StationId": 1010,
+   "Week": 6,
+   "Bike_in": 132
+ },
+ {
+   "FIELD1": 301,
+   "StationId": 1045,
+   "Week": 7,
+   "Bike_in": 262
+ },
+ {
+   "FIELD1": 302,
+   "StationId": 1000,
+   "Week": 7,
+   "Bike_in": 195
+ },
+ {
+   "FIELD1": 303,
+   "StationId": 1001,
+   "Week": 7,
+   "Bike_in": 179
+ },
+ {
+   "FIELD1": 304,
+   "StationId": 1010,
+   "Week": 7,
+   "Bike_in": 174
+ },
+ {
+   "FIELD1": 305,
+   "StationId": 1013,
+   "Week": 7,
+   "Bike_in": 159
+ },
+ {
+   "FIELD1": 351,
+   "StationId": 1045,
+   "Week": 8,
+   "Bike_in": 246
+ },
+ {
+   "FIELD1": 352,
+   "StationId": 1017,
+   "Week": 8,
+   "Bike_in": 198
+ },
+ {
+   "FIELD1": 353,
+   "StationId": 1000,
+   "Week": 8,
+   "Bike_in": 190
+ },
+ {
+   "FIELD1": 354,
+   "StationId": 1001,
+   "Week": 8,
+   "Bike_in": 160
+ },
+ {
+   "FIELD1": 355,
+   "StationId": 1013,
+   "Week": 8,
+   "Bike_in": 145
+ },
+ {
+   "FIELD1": 401,
+   "StationId": 1045,
+   "Week": 9,
+   "Bike_in": 221
+ },
+ {
+   "FIELD1": 402,
+   "StationId": 1001,
+   "Week": 9,
+   "Bike_in": 163
+ },
+ {
+   "FIELD1": 403,
+   "StationId": 1017,
+   "Week": 9,
+   "Bike_in": 162
+ },
+ {
+   "FIELD1": 404,
+   "StationId": 1010,
+   "Week": 9,
+   "Bike_in": 160
+ },
+ {
+   "FIELD1": 405,
+   "StationId": 1000,
+   "Week": 9,
+   "Bike_in": 150
+ },
+ {
+   "FIELD1": 451,
+   "StationId": 1010,
+   "Week": 10,
+   "Bike_in": 148
+ },
+ {
+   "FIELD1": 452,
+   "StationId": 1012,
+   "Week": 10,
+   "Bike_in": 140
+ },
+ {
+   "FIELD1": 453,
+   "StationId": 1045,
+   "Week": 10,
+   "Bike_in": 139
+ },
+ {
+   "FIELD1": 454,
+   "StationId": 1001,
+   "Week": 10,
+   "Bike_in": 119
+ },
+ {
+   "FIELD1": 455,
+   "StationId": 1017,
+   "Week": 10,
+   "Bike_in": 100
+ },
+ {
+   "FIELD1": 501,
+   "StationId": 1045,
+   "Week": 11,
+   "Bike_in": 180
+ },
+ {
+   "FIELD1": 502,
+   "StationId": 1001,
+   "Week": 11,
+   "Bike_in": 149
+ },
+ {
+   "FIELD1": 503,
+   "StationId": 1000,
+   "Week": 11,
+   "Bike_in": 142
+ },
+ {
+   "FIELD1": 504,
+   "StationId": 1012,
+   "Week": 11,
+   "Bike_in": 141
+ },
+ {
+   "FIELD1": 505,
+   "StationId": 1017,
+   "Week": 11,
+   "Bike_in": 120
+ },
+ {
+   "FIELD1": 551,
+   "StationId": 1017,
+   "Week": 12,
+   "Bike_in": 148
+ },
+ {
+   "FIELD1": 552,
+   "StationId": 1010,
+   "Week": 12,
+   "Bike_in": 145
+ },
+ {
+   "FIELD1": 553,
+   "StationId": 1001,
+   "Week": 12,
+   "Bike_in": 144
+ },
+ {
+   "FIELD1": 554,
+   "StationId": 1045,
+   "Week": 12,
+   "Bike_in": 123
+ },
+ {
+   "FIELD1": 555,
+   "StationId": 1000,
+   "Week": 12,
+   "Bike_in": 118
+ },
+ {
+   "FIELD1": 601,
+   "StationId": 1001,
+   "Week": 13,
+   "Bike_in": 176
+ },
+ {
+   "FIELD1": 602,
+   "StationId": 1045,
+   "Week": 13,
+   "Bike_in": 159
+ },
+ {
+   "FIELD1": 603,
+   "StationId": 1010,
+   "Week": 13,
+   "Bike_in": 154
+ },
+ {
+   "FIELD1": 604,
+   "StationId": 1000,
+   "Week": 13,
+   "Bike_in": 131
+ },
+ {
+   "FIELD1": 605,
+   "StationId": 1017,
+   "Week": 13,
+   "Bike_in": 121
+ },
+ {
+   "FIELD1": 651,
+   "StationId": 1000,
+   "Week": 14,
+   "Bike_in": 76
+ },
+ {
+   "FIELD1": 652,
+   "StationId": 1012,
+   "Week": 14,
+   "Bike_in": 76
+ },
+ {
+   "FIELD1": 653,
+   "StationId": 1010,
+   "Week": 14,
+   "Bike_in": 73
+ },
+ {
+   "FIELD1": 654,
+   "StationId": 1001,
+   "Week": 14,
+   "Bike_in": 72
+ },
+ {
+   "FIELD1": 655,
+   "StationId": 1040,
+   "Week": 14,
+   "Bike_in": 63
+ },
+ {
+   "FIELD1": 701,
+   "StationId": 1010,
+   "Week": 15,
+   "Bike_in": 109
+ },
+ {
+   "FIELD1": 702,
+   "StationId": 1045,
+   "Week": 15,
+   "Bike_in": 109
+ },
+ {
+   "FIELD1": 703,
+   "StationId": 1017,
+   "Week": 15,
+   "Bike_in": 96
+ },
+ {
+   "FIELD1": 704,
+   "StationId": 1013,
+   "Week": 15,
+   "Bike_in": 90
+ },
+ {
+   "FIELD1": 705,
+   "StationId": 1001,
+   "Week": 15,
+   "Bike_in": 87
+ },
+ {
+   "FIELD1": 751,
+   "StationId": 1045,
+   "Week": 16,
+   "Bike_in": 108
+ },
+ {
+   "FIELD1": 752,
+   "StationId": 1010,
+   "Week": 16,
+   "Bike_in": 83
+ },
+ {
+   "FIELD1": 753,
+   "StationId": 1000,
+   "Week": 16,
+   "Bike_in": 78
+ },
+ {
+   "FIELD1": 754,
+   "StationId": 1001,
+   "Week": 16,
+   "Bike_in": 73
+ },
+ {
+   "FIELD1": 755,
+   "StationId": 1017,
+   "Week": 16,
+   "Bike_in": 70
+ },
+ {
+   "FIELD1": 801,
+   "StationId": 1010,
+   "Week": 17,
+   "Bike_in": 100
+ },
+ {
+   "FIELD1": 802,
+   "StationId": 1017,
+   "Week": 17,
+   "Bike_in": 80
+ },
+ {
+   "FIELD1": 803,
+   "StationId": 1001,
+   "Week": 17,
+   "Bike_in": 67
+ },
+ {
+   "FIELD1": 804,
+   "StationId": 1041,
+   "Week": 17,
+   "Bike_in": 60
+ },
+ {
+   "FIELD1": 805,
+   "StationId": 1000,
+   "Week": 17,
+   "Bike_in": 59
+ },
+ {
+   "FIELD1": 851,
+   "StationId": 1041,
+   "Week": 18,
+   "Bike_in": 61
+ },
+ {
+   "FIELD1": 852,
+   "StationId": 1001,
+   "Week": 18,
+   "Bike_in": 58
+ },
+ {
+   "FIELD1": 853,
+   "StationId": 1017,
+   "Week": 18,
+   "Bike_in": 55
+ },
+ {
+   "FIELD1": 854,
+   "StationId": 1045,
+   "Week": 18,
+   "Bike_in": 50
+ },
+ {
+   "FIELD1": 855,
+   "StationId": 1010,
+   "Week": 18,
+   "Bike_in": 46
+ },
+ {
+   "FIELD1": 901,
+   "StationId": 1045,
+   "Week": 19,
+   "Bike_in": 94
+ },
+ {
+   "FIELD1": 902,
+   "StationId": 1001,
+   "Week": 19,
+   "Bike_in": 88
+ },
+ {
+   "FIELD1": 903,
+   "StationId": 1017,
+   "Week": 19,
+   "Bike_in": 81
+ },
+ {
+   "FIELD1": 904,
+   "StationId": 1010,
+   "Week": 19,
+   "Bike_in": 73
+ },
+ {
+   "FIELD1": 905,
+   "StationId": 1012,
+   "Week": 19,
+   "Bike_in": 72
+ },
+ {
+   "FIELD1": 951,
+   "StationId": 1010,
+   "Week": 20,
+   "Bike_in": 65
+ },
+ {
+   "FIELD1": 952,
+   "StationId": 1041,
+   "Week": 20,
+   "Bike_in": 50
+ },
+ {
+   "FIELD1": 953,
+   "StationId": 1017,
+   "Week": 20,
+   "Bike_in": 44
+ },
+ {
+   "FIELD1": 954,
+   "StationId": 1000,
+   "Week": 20,
+   "Bike_in": 42
+ },
+ {
+   "FIELD1": 955,
+   "StationId": 1045,
+   "Week": 20,
+   "Bike_in": 40
+ },
+ {
+   "FIELD1": 1001,
+   "StationId": 1010,
+   "Week": 21,
+   "Bike_in": 82
+ },
+ {
+   "FIELD1": 1002,
+   "StationId": 1017,
+   "Week": 21,
+   "Bike_in": 65
+ },
+ {
+   "FIELD1": 1003,
+   "StationId": 1001,
+   "Week": 21,
+   "Bike_in": 61
+ },
+ {
+   "FIELD1": 1004,
+   "StationId": 1045,
+   "Week": 21,
+   "Bike_in": 61
+ },
+ {
+   "FIELD1": 1005,
+   "StationId": 1000,
+   "Week": 21,
+   "Bike_in": 57
+ },
+ {
+   "FIELD1": 1051,
+   "StationId": 1000,
+   "Week": 22,
+   "Bike_in": 41
+ },
+ {
+   "FIELD1": 1052,
+   "StationId": 1001,
+   "Week": 22,
+   "Bike_in": 38
+ },
+ {
+   "FIELD1": 1053,
+   "StationId": 1033,
+   "Week": 22,
+   "Bike_in": 38
+ },
+ {
+   "FIELD1": 1054,
+   "StationId": 1045,
+   "Week": 22,
+   "Bike_in": 38
+ },
+ {
+   "FIELD1": 1055,
+   "StationId": 1017,
+   "Week": 22,
+   "Bike_in": 35
+ },
+ {
+   "FIELD1": 1101,
+   "StationId": 1017,
+   "Week": 23,
+   "Bike_in": 29
+ },
+ {
+   "FIELD1": 1102,
+   "StationId": 1041,
+   "Week": 23,
+   "Bike_in": 28
+ },
+ {
+   "FIELD1": 1103,
+   "StationId": 1037,
+   "Week": 23,
+   "Bike_in": 26
+ },
+ {
+   "FIELD1": 1104,
+   "StationId": 1038,
+   "Week": 23,
+   "Bike_in": 25
+ },
+ {
+   "FIELD1": 1105,
+   "StationId": 1010,
+   "Week": 23,
+   "Bike_in": 22
+ },
+ {
+   "FIELD1": 1151,
+   "StationId": 1000,
+   "Week": 24,
+   "Bike_in": 83
+ },
+ {
+   "FIELD1": 1152,
+   "StationId": 1001,
+   "Week": 24,
+   "Bike_in": 71
+ },
+ {
+   "FIELD1": 1153,
+   "StationId": 1010,
+   "Week": 24,
+   "Bike_in": 71
+ },
+ {
+   "FIELD1": 1154,
+   "StationId": 1017,
+   "Week": 24,
+   "Bike_in": 68
+ },
+ {
+   "FIELD1": 1155,
+   "StationId": 1013,
+   "Week": 24,
+   "Bike_in": 53
+ },
+ {
+   "FIELD1": 1201,
+   "StationId": 1045,
+   "Week": 25,
+   "Bike_in": 43
+ },
+ {
+   "FIELD1": 1202,
+   "StationId": 1000,
+   "Week": 25,
+   "Bike_in": 38
+ },
+ {
+   "FIELD1": 1203,
+   "StationId": 1001,
+   "Week": 25,
+   "Bike_in": 32
+ },
+ {
+   "FIELD1": 1204,
+   "StationId": 1041,
+   "Week": 25,
+   "Bike_in": 32
+ },
+ {
+   "FIELD1": 1205,
+   "StationId": 1010,
+   "Week": 25,
+   "Bike_in": 30
+ },
+ {
+   "FIELD1": 1251,
+   "StationId": 1000,
+   "Week": 26,
+   "Bike_in": 45
+ },
+ {
+   "FIELD1": 1252,
+   "StationId": 1001,
+   "Week": 26,
+   "Bike_in": 37
+ },
+ {
+   "FIELD1": 1253,
+   "StationId": 1017,
+   "Week": 26,
+   "Bike_in": 37
+ },
+ {
+   "FIELD1": 1254,
+   "StationId": 1045,
+   "Week": 26,
+   "Bike_in": 35
+ },
+ {
+   "FIELD1": 1255,
+   "StationId": 1010,
+   "Week": 26,
+   "Bike_in": 32
+ },
+ {
+   "FIELD1": 1301,
+   "StationId": 1000,
+   "Week": 27,
+   "Bike_in": 23
+ },
+ {
+   "FIELD1": 1302,
+   "StationId": 1010,
+   "Week": 27,
+   "Bike_in": 17
+ },
+ {
+   "FIELD1": 1303,
+   "StationId": 1047,
+   "Week": 27,
+   "Bike_in": 15
+ },
+ {
+   "FIELD1": 1304,
+   "StationId": 1001,
+   "Week": 27,
+   "Bike_in": 14
+ },
+ {
+   "FIELD1": 1305,
+   "StationId": 1016,
+   "Week": 27,
+   "Bike_in": 12
+ },
+ {
+   "FIELD1": 1351,
+   "StationId": 1040,
+   "Week": 28,
+   "Bike_in": 19
+ },
+ {
+   "FIELD1": 1352,
+   "StationId": 1047,
+   "Week": 28,
+   "Bike_in": 19
+ },
+ {
+   "FIELD1": 1353,
+   "StationId": 1000,
+   "Week": 28,
+   "Bike_in": 17
+ },
+ {
+   "FIELD1": 1354,
+   "StationId": 1045,
+   "Week": 28,
+   "Bike_in": 16
+ },
+ {
+   "FIELD1": 1355,
+   "StationId": 1048,
+   "Week": 28,
+   "Bike_in": 16
+ },
+ {
+   "FIELD1": 1401,
+   "StationId": 1038,
+   "Week": 29,
+   "Bike_in": 18
+ },
+ {
+   "FIELD1": 1402,
+   "StationId": 1041,
+   "Week": 29,
+   "Bike_in": 18
+ },
+ {
+   "FIELD1": 1403,
+   "StationId": 1028,
+   "Week": 29,
+   "Bike_in": 15
+ },
+ {
+   "FIELD1": 1404,
+   "StationId": 1040,
+   "Week": 29,
+   "Bike_in": 14
+ },
+ {
+   "FIELD1": 1405,
+   "StationId": 1029,
+   "Week": 29,
+   "Bike_in": 12
+ },
+ {
+   "FIELD1": 1451,
+   "StationId": 1038,
+   "Week": 30,
+   "Bike_in": 20
+ },
+ {
+   "FIELD1": 1452,
+   "StationId": 1041,
+   "Week": 30,
+   "Bike_in": 13
+ },
+ {
+   "FIELD1": 1453,
+   "StationId": 1037,
+   "Week": 30,
+   "Bike_in": 9
+ },
+ {
+   "FIELD1": 1454,
+   "StationId": 1019,
+   "Week": 30,
+   "Bike_in": 8
+ },
+ {
+   "FIELD1": 1455,
+   "StationId": 1036,
+   "Week": 30,
+   "Bike_in": 8
+ },
+ {
+   "FIELD1": 1501,
+   "StationId": 1045,
+   "Week": 31,
+   "Bike_in": 23
+ },
+ {
+   "FIELD1": 1502,
+   "StationId": 1000,
+   "Week": 31,
+   "Bike_in": 19
+ },
+ {
+   "FIELD1": 1503,
+   "StationId": 1010,
+   "Week": 31,
+   "Bike_in": 18
+ },
+ {
+   "FIELD1": 1504,
+   "StationId": 1038,
+   "Week": 31,
+   "Bike_in": 16
+ },
+ {
+   "FIELD1": 1505,
+   "StationId": 1047,
+   "Week": 31,
+   "Bike_in": 16
+ },
+ {
+   "FIELD1": 1551,
+   "StationId": 1045,
+   "Week": 32,
+   "Bike_in": 42
+ },
+ {
+   "FIELD1": 1552,
+   "StationId": 1041,
+   "Week": 32,
+   "Bike_in": 36
+ },
+ {
+   "FIELD1": 1553,
+   "StationId": 1038,
+   "Week": 32,
+   "Bike_in": 35
+ },
+ {
+   "FIELD1": 1554,
+   "StationId": 1017,
+   "Week": 32,
+   "Bike_in": 31
+ },
+ {
+   "FIELD1": 1555,
+   "StationId": 1037,
+   "Week": 32,
+   "Bike_in": 30
+ },
+ {
+   "FIELD1": 1601,
+   "StationId": 1038,
+   "Week": 33,
+   "Bike_in": 27
+ },
+ {
+   "FIELD1": 1602,
+   "StationId": 1041,
+   "Week": 33,
+   "Bike_in": 21
+ },
+ {
+   "FIELD1": 1603,
+   "StationId": 1000,
+   "Week": 33,
+   "Bike_in": 14
+ },
+ {
+   "FIELD1": 1604,
+   "StationId": 1039,
+   "Week": 33,
+   "Bike_in": 12
+ },
+ {
+   "FIELD1": 1605,
+   "StationId": 1040,
+   "Week": 33,
+   "Bike_in": 12
+ },
+ {
+   "FIELD1": 1651,
+   "StationId": 1045,
+   "Week": 34,
+   "Bike_in": 63
+ },
+ {
+   "FIELD1": 1652,
+   "StationId": 1001,
+   "Week": 34,
+   "Bike_in": 44
+ },
+ {
+   "FIELD1": 1653,
+   "StationId": 1000,
+   "Week": 34,
+   "Bike_in": 39
+ },
+ {
+   "FIELD1": 1654,
+   "StationId": 1041,
+   "Week": 34,
+   "Bike_in": 37
+ },
+ {
+   "FIELD1": 1655,
+   "StationId": 1017,
+   "Week": 34,
+   "Bike_in": 33
+ },
+ {
+   "FIELD1": 1701,
+   "StationId": 1038,
+   "Week": 35,
+   "Bike_in": 31
+ },
+ {
+   "FIELD1": 1702,
+   "StationId": 1045,
+   "Week": 35,
+   "Bike_in": 31
+ },
+ {
+   "FIELD1": 1703,
+   "StationId": 1041,
+   "Week": 35,
+   "Bike_in": 30
+ },
+ {
+   "FIELD1": 1704,
+   "StationId": 1040,
+   "Week": 35,
+   "Bike_in": 28
+ },
+ {
+   "FIELD1": 1705,
+   "StationId": 1049,
+   "Week": 35,
+   "Bike_in": 25
+ },
+ {
+   "FIELD1": 1751,
+   "StationId": 1012,
+   "Week": 36,
+   "Bike_in": 55
+ },
+ {
+   "FIELD1": 1752,
+   "StationId": 1000,
+   "Week": 36,
+   "Bike_in": 52
+ },
+ {
+   "FIELD1": 1753,
+   "StationId": 1049,
+   "Week": 36,
+   "Bike_in": 46
+ },
+ {
+   "FIELD1": 1754,
+   "StationId": 1045,
+   "Week": 36,
+   "Bike_in": 45
+ },
+ {
+   "FIELD1": 1755,
+   "StationId": 1001,
+   "Week": 36,
+   "Bike_in": 41
+ },
+ {
+   "FIELD1": 1801,
+   "StationId": 1045,
+   "Week": 37,
+   "Bike_in": 118
+ },
+ {
+   "FIELD1": 1802,
+   "StationId": 1000,
+   "Week": 37,
+   "Bike_in": 85
+ },
+ {
+   "FIELD1": 1803,
+   "StationId": 1001,
+   "Week": 37,
+   "Bike_in": 74
+ },
+ {
+   "FIELD1": 1804,
+   "StationId": 1016,
+   "Week": 37,
+   "Bike_in": 64
+ },
+ {
+   "FIELD1": 1805,
+   "StationId": 1049,
+   "Week": 37,
+   "Bike_in": 62
+ },
+ {
+   "FIELD1": 1851,
+   "StationId": 1045,
+   "Week": 38,
+   "Bike_in": 83
+ },
+ {
+   "FIELD1": 1852,
+   "StationId": 1000,
+   "Week": 38,
+   "Bike_in": 49
+ },
+ {
+   "FIELD1": 1853,
+   "StationId": 1001,
+   "Week": 38,
+   "Bike_in": 46
+ },
+ {
+   "FIELD1": 1854,
+   "StationId": 1017,
+   "Week": 38,
+   "Bike_in": 44
+ },
+ {
+   "FIELD1": 1855,
+   "StationId": 1012,
+   "Week": 38,
+   "Bike_in": 40
+ },
+ {
+   "FIELD1": 1901,
+   "StationId": 1045,
+   "Week": 39,
+   "Bike_in": 99
+ },
+ {
+   "FIELD1": 1902,
+   "StationId": 1000,
+   "Week": 39,
+   "Bike_in": 66
+ },
+ {
+   "FIELD1": 1903,
+   "StationId": 1001,
+   "Week": 39,
+   "Bike_in": 56
+ },
+ {
+   "FIELD1": 1904,
+   "StationId": 1012,
+   "Week": 39,
+   "Bike_in": 54
+ },
+ {
+   "FIELD1": 1905,
+   "StationId": 1013,
+   "Week": 39,
+   "Bike_in": 48
+ },
+ {
+   "FIELD1": 1951,
+   "StationId": 1045,
+   "Week": 40,
+   "Bike_in": 95
+ },
+ {
+   "FIELD1": 1952,
+   "StationId": 1000,
+   "Week": 40,
+   "Bike_in": 84
+ },
+ {
+   "FIELD1": 1953,
+   "StationId": 1001,
+   "Week": 40,
+   "Bike_in": 72
+ },
+ {
+   "FIELD1": 1954,
+   "StationId": 1012,
+   "Week": 40,
+   "Bike_in": 68
+ },
+ {
+   "FIELD1": 1955,
+   "StationId": 1036,
+   "Week": 40,
+   "Bike_in": 50
+ }
+]

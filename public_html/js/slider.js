@@ -16,15 +16,38 @@ var slider = d3.slider().min(1).max(week_index.length).tickValues(week_index).st
 
 
 
-//Render the slider in the div
+////Render the slider in the div
+//var observer = new MutationObserver(function(){
+//    generateTopData();
+//});
+//
+//var config = {attributes:true,childList:true};
+//$.each($('.valuechange'),function(index,val){
+//    observer.observe(val,config);
+//});
+
+
+var weekNum = "1",dataType = "1";
+
 d3.select('#slider').call(slider)
     .on("click", function() {
-        $('#weekNum').val(self.slider.value());
-        createMap([1001,1002]);
+//        $('#weekNum').val(self.slider.value());
+        weekNum = self.slider.value();
+        generateTopData();
+    }).on("mousedown",function(){
+        $(this).data("flag",true);
     })
-    .on("drag", function() {
-        $('#weekNum').val(self.slider.value());
-        createMap([1001,1002]);
-    });
+$(document).on("mousemove",function(){
+    var elem = $('#slider');
+    if(elem.data("flag")){
+//        $('#weekNum').val(slider.value());
+        weekNum = slider.value();
+        generateTopData();
+    }
+}).on("mouseup",function(){
+    $("#slider").data("flag",false);
+});
+
+    
 
 

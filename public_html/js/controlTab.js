@@ -7,7 +7,9 @@ function clickEvent(){
         $(this).addClass("tabSelected");
         $(this).siblings().removeClass();
         $(this).siblings().addClass("tabUnselected");
-        $("#dataFileType").val($(this).attr("val"));
+//        $("#dataFileType").val($(this).attr("val"));
+        dataType = $(this).attr("val");
+        generateTopData();
     }
 }
 
