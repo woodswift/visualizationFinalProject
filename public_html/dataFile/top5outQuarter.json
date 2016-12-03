@@ -1,0 +1,1202 @@
+[
+ {
+   "Quarter": 3,
+   "Week": 1,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 1,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 1,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 1,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 1,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 2,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 2,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 2,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 2,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 2,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 3,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 3,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 3,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 3,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 3,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 4,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 4,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 4,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 4,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 4,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 5,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 5,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 5,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 5,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 5,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 6,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 6,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 6,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 6,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 6,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 7,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 7,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 7,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 7,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 7,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 8,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 8,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 8,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 8,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 8,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 9,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 9,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 9,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 9,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 9,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 10,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 10,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 10,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 10,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 10,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 11,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 11,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 11,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 11,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 11,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 12,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 12,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 12,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 12,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 12,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 13,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 13,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 13,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 13,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 13,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 3,
+   "Week": 14,
+   "StationId": 1045,
+   "Bike_out": 2194
+ },
+ {
+   "Quarter": 3,
+   "Week": 14,
+   "StationId": 1001,
+   "Bike_out": 2192
+ },
+ {
+   "Quarter": 3,
+   "Week": 14,
+   "StationId": 1000,
+   "Bike_out": 1961
+ },
+ {
+   "Quarter": 3,
+   "Week": 14,
+   "StationId": 1010,
+   "Bike_out": 1846
+ },
+ {
+   "Quarter": 3,
+   "Week": 14,
+   "StationId": 1017,
+   "Bike_out": 1735
+ },
+ {
+   "Quarter": 4,
+   "Week": 15,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 15,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 15,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 15,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 15,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 16,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 16,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 16,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 16,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 16,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 17,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 17,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 17,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 17,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 17,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 18,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 18,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 18,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 18,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 18,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 19,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 19,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 19,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 19,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 19,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 20,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 20,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 20,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 20,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 20,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 21,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 21,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 21,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 21,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 21,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 22,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 22,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 22,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 22,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 22,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 23,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 23,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 23,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 23,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 23,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 24,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 24,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 24,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 24,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 24,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 25,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 25,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 25,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 25,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 25,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 26,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 26,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 26,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 26,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 26,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 4,
+   "Week": 27,
+   "StationId": 1010,
+   "Bike_out": 732
+ },
+ {
+   "Quarter": 4,
+   "Week": 27,
+   "StationId": 1041,
+   "Bike_out": 657
+ },
+ {
+   "Quarter": 4,
+   "Week": 27,
+   "StationId": 1045,
+   "Bike_out": 619
+ },
+ {
+   "Quarter": 4,
+   "Week": 27,
+   "StationId": 1017,
+   "Bike_out": 581
+ },
+ {
+   "Quarter": 4,
+   "Week": 27,
+   "StationId": 1000,
+   "Bike_out": 572
+ },
+ {
+   "Quarter": 1,
+   "Week": 28,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 28,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 28,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 28,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 28,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 29,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 29,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 29,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 29,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 29,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 30,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 30,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 30,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 30,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 30,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 31,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 31,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 31,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 31,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 31,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 32,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 32,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 32,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 32,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 32,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 33,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 33,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 33,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 33,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 33,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 34,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 34,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 34,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 34,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 34,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 35,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 35,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 35,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 35,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 35,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 36,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 36,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 36,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 36,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 36,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 37,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 37,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 37,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 37,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 37,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 38,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 38,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 38,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 38,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 38,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 39,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 39,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 39,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 39,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 39,
+   "StationId": 1001,
+   "Bike_out": 334
+ },
+ {
+   "Quarter": 1,
+   "Week": 40,
+   "StationId": 1045,
+   "Bike_out": 526
+ },
+ {
+   "Quarter": 1,
+   "Week": 40,
+   "StationId": 1038,
+   "Bike_out": 404
+ },
+ {
+   "Quarter": 1,
+   "Week": 40,
+   "StationId": 1000,
+   "Bike_out": 386
+ },
+ {
+   "Quarter": 1,
+   "Week": 40,
+   "StationId": 1041,
+   "Bike_out": 375
+ },
+ {
+   "Quarter": 1,
+   "Week": 40,
+   "StationId": 1001,
+   "Bike_out": 334
+ }
+]

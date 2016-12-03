@@ -1,0 +1,1002 @@
+[
+ {
+   "StationId": 1045,
+   "Week": 1,
+   "Bike_out": 175
+ },
+ {
+   "StationId": 1000,
+   "Week": 1,
+   "Bike_out": 161
+ },
+ {
+   "StationId": 1001,
+   "Week": 1,
+   "Bike_out": 133
+ },
+ {
+   "StationId": 1017,
+   "Week": 1,
+   "Bike_out": 102
+ },
+ {
+   "StationId": 1010,
+   "Week": 1,
+   "Bike_out": 93
+ },
+ {
+   "StationId": 1001,
+   "Week": 2,
+   "Bike_out": 174
+ },
+ {
+   "StationId": 1045,
+   "Week": 2,
+   "Bike_out": 165
+ },
+ {
+   "StationId": 1010,
+   "Week": 2,
+   "Bike_out": 148
+ },
+ {
+   "StationId": 1013,
+   "Week": 2,
+   "Bike_out": 138
+ },
+ {
+   "StationId": 1017,
+   "Week": 2,
+   "Bike_out": 116
+ },
+ {
+   "StationId": 1010,
+   "Week": 3,
+   "Bike_out": 137
+ },
+ {
+   "StationId": 1001,
+   "Week": 3,
+   "Bike_out": 132
+ },
+ {
+   "StationId": 1013,
+   "Week": 3,
+   "Bike_out": 132
+ },
+ {
+   "StationId": 1045,
+   "Week": 3,
+   "Bike_out": 131
+ },
+ {
+   "StationId": 1000,
+   "Week": 3,
+   "Bike_out": 129
+ },
+ {
+   "StationId": 1000,
+   "Week": 4,
+   "Bike_out": 194
+ },
+ {
+   "StationId": 1001,
+   "Week": 4,
+   "Bike_out": 174
+ },
+ {
+   "StationId": 1045,
+   "Week": 4,
+   "Bike_out": 168
+ },
+ {
+   "StationId": 1012,
+   "Week": 4,
+   "Bike_out": 152
+ },
+ {
+   "StationId": 1010,
+   "Week": 4,
+   "Bike_out": 149
+ },
+ {
+   "StationId": 1001,
+   "Week": 5,
+   "Bike_out": 330
+ },
+ {
+   "StationId": 1000,
+   "Week": 5,
+   "Bike_out": 200
+ },
+ {
+   "StationId": 1017,
+   "Week": 5,
+   "Bike_out": 192
+ },
+ {
+   "StationId": 1010,
+   "Week": 5,
+   "Bike_out": 181
+ },
+ {
+   "StationId": 1045,
+   "Week": 5,
+   "Bike_out": 159
+ },
+ {
+   "StationId": 1045,
+   "Week": 6,
+   "Bike_out": 217
+ },
+ {
+   "StationId": 1001,
+   "Week": 6,
+   "Bike_out": 176
+ },
+ {
+   "StationId": 1000,
+   "Week": 6,
+   "Bike_out": 173
+ },
+ {
+   "StationId": 1017,
+   "Week": 6,
+   "Bike_out": 137
+ },
+ {
+   "StationId": 1012,
+   "Week": 6,
+   "Bike_out": 125
+ },
+ {
+   "StationId": 1045,
+   "Week": 7,
+   "Bike_out": 242
+ },
+ {
+   "StationId": 1001,
+   "Week": 7,
+   "Bike_out": 174
+ },
+ {
+   "StationId": 1000,
+   "Week": 7,
+   "Bike_out": 163
+ },
+ {
+   "StationId": 1010,
+   "Week": 7,
+   "Bike_out": 159
+ },
+ {
+   "StationId": 1012,
+   "Week": 7,
+   "Bike_out": 150
+ },
+ {
+   "StationId": 1045,
+   "Week": 8,
+   "Bike_out": 206
+ },
+ {
+   "StationId": 1000,
+   "Week": 8,
+   "Bike_out": 167
+ },
+ {
+   "StationId": 1010,
+   "Week": 8,
+   "Bike_out": 163
+ },
+ {
+   "StationId": 1017,
+   "Week": 8,
+   "Bike_out": 157
+ },
+ {
+   "StationId": 1001,
+   "Week": 8,
+   "Bike_out": 143
+ },
+ {
+   "StationId": 1045,
+   "Week": 9,
+   "Bike_out": 196
+ },
+ {
+   "StationId": 1017,
+   "Week": 9,
+   "Bike_out": 151
+ },
+ {
+   "StationId": 1010,
+   "Week": 9,
+   "Bike_out": 150
+ },
+ {
+   "StationId": 1001,
+   "Week": 9,
+   "Bike_out": 148
+ },
+ {
+   "StationId": 1000,
+   "Week": 9,
+   "Bike_out": 142
+ },
+ {
+   "StationId": 1010,
+   "Week": 10,
+   "Bike_out": 126
+ },
+ {
+   "StationId": 1012,
+   "Week": 10,
+   "Bike_out": 120
+ },
+ {
+   "StationId": 1045,
+   "Week": 10,
+   "Bike_out": 117
+ },
+ {
+   "StationId": 1001,
+   "Week": 10,
+   "Bike_out": 115
+ },
+ {
+   "StationId": 1017,
+   "Week": 10,
+   "Bike_out": 107
+ },
+ {
+   "StationId": 1001,
+   "Week": 11,
+   "Bike_out": 153
+ },
+ {
+   "StationId": 1045,
+   "Week": 11,
+   "Bike_out": 152
+ },
+ {
+   "StationId": 1012,
+   "Week": 11,
+   "Bike_out": 130
+ },
+ {
+   "StationId": 1000,
+   "Week": 11,
+   "Bike_out": 126
+ },
+ {
+   "StationId": 1017,
+   "Week": 11,
+   "Bike_out": 99
+ },
+ {
+   "StationId": 1010,
+   "Week": 12,
+   "Bike_out": 137
+ },
+ {
+   "StationId": 1001,
+   "Week": 12,
+   "Bike_out": 136
+ },
+ {
+   "StationId": 1017,
+   "Week": 12,
+   "Bike_out": 129
+ },
+ {
+   "StationId": 1045,
+   "Week": 12,
+   "Bike_out": 113
+ },
+ {
+   "StationId": 1000,
+   "Week": 12,
+   "Bike_out": 105
+ },
+ {
+   "StationId": 1001,
+   "Week": 13,
+   "Bike_out": 169
+ },
+ {
+   "StationId": 1010,
+   "Week": 13,
+   "Bike_out": 155
+ },
+ {
+   "StationId": 1000,
+   "Week": 13,
+   "Bike_out": 139
+ },
+ {
+   "StationId": 1045,
+   "Week": 13,
+   "Bike_out": 126
+ },
+ {
+   "StationId": 1017,
+   "Week": 13,
+   "Bike_out": 107
+ },
+ {
+   "StationId": 1010,
+   "Week": 14,
+   "Bike_out": 70
+ },
+ {
+   "StationId": 1041,
+   "Week": 14,
+   "Bike_out": 70
+ },
+ {
+   "StationId": 1000,
+   "Week": 14,
+   "Bike_out": 69
+ },
+ {
+   "StationId": 1001,
+   "Week": 14,
+   "Bike_out": 64
+ },
+ {
+   "StationId": 1017,
+   "Week": 14,
+   "Bike_out": 63
+ },
+ {
+   "StationId": 1010,
+   "Week": 15,
+   "Bike_out": 108
+ },
+ {
+   "StationId": 1045,
+   "Week": 15,
+   "Bike_out": 91
+ },
+ {
+   "StationId": 1013,
+   "Week": 15,
+   "Bike_out": 86
+ },
+ {
+   "StationId": 1017,
+   "Week": 15,
+   "Bike_out": 85
+ },
+ {
+   "StationId": 1041,
+   "Week": 15,
+   "Bike_out": 79
+ },
+ {
+   "StationId": 1045,
+   "Week": 16,
+   "Bike_out": 93
+ },
+ {
+   "StationId": 1010,
+   "Week": 16,
+   "Bike_out": 76
+ },
+ {
+   "StationId": 1041,
+   "Week": 16,
+   "Bike_out": 76
+ },
+ {
+   "StationId": 1000,
+   "Week": 16,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1017,
+   "Week": 16,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1010,
+   "Week": 17,
+   "Bike_out": 96
+ },
+ {
+   "StationId": 1041,
+   "Week": 17,
+   "Bike_out": 78
+ },
+ {
+   "StationId": 1017,
+   "Week": 17,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1001,
+   "Week": 17,
+   "Bike_out": 58
+ },
+ {
+   "StationId": 1038,
+   "Week": 17,
+   "Bike_out": 58
+ },
+ {
+   "StationId": 1041,
+   "Week": 18,
+   "Bike_out": 60
+ },
+ {
+   "StationId": 1010,
+   "Week": 18,
+   "Bike_out": 51
+ },
+ {
+   "StationId": 1001,
+   "Week": 18,
+   "Bike_out": 48
+ },
+ {
+   "StationId": 1038,
+   "Week": 18,
+   "Bike_out": 48
+ },
+ {
+   "StationId": 1045,
+   "Week": 18,
+   "Bike_out": 43
+ },
+ {
+   "StationId": 1045,
+   "Week": 19,
+   "Bike_out": 74
+ },
+ {
+   "StationId": 1001,
+   "Week": 19,
+   "Bike_out": 68
+ },
+ {
+   "StationId": 1041,
+   "Week": 19,
+   "Bike_out": 67
+ },
+ {
+   "StationId": 1010,
+   "Week": 19,
+   "Bike_out": 66
+ },
+ {
+   "StationId": 1012,
+   "Week": 19,
+   "Bike_out": 64
+ },
+ {
+   "StationId": 1010,
+   "Week": 20,
+   "Bike_out": 67
+ },
+ {
+   "StationId": 1041,
+   "Week": 20,
+   "Bike_out": 55
+ },
+ {
+   "StationId": 1038,
+   "Week": 20,
+   "Bike_out": 50
+ },
+ {
+   "StationId": 1001,
+   "Week": 20,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1017,
+   "Week": 20,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1010,
+   "Week": 21,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1001,
+   "Week": 21,
+   "Bike_out": 57
+ },
+ {
+   "StationId": 1000,
+   "Week": 21,
+   "Bike_out": 51
+ },
+ {
+   "StationId": 1041,
+   "Week": 21,
+   "Bike_out": 51
+ },
+ {
+   "StationId": 1017,
+   "Week": 21,
+   "Bike_out": 49
+ },
+ {
+   "StationId": 1017,
+   "Week": 22,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1000,
+   "Week": 22,
+   "Bike_out": 36
+ },
+ {
+   "StationId": 1034,
+   "Week": 22,
+   "Bike_out": 34
+ },
+ {
+   "StationId": 1033,
+   "Week": 22,
+   "Bike_out": 32
+ },
+ {
+   "StationId": 1045,
+   "Week": 22,
+   "Bike_out": 30
+ },
+ {
+   "StationId": 1038,
+   "Week": 23,
+   "Bike_out": 36
+ },
+ {
+   "StationId": 1041,
+   "Week": 23,
+   "Bike_out": 33
+ },
+ {
+   "StationId": 1033,
+   "Week": 23,
+   "Bike_out": 29
+ },
+ {
+   "StationId": 1040,
+   "Week": 23,
+   "Bike_out": 29
+ },
+ {
+   "StationId": 1029,
+   "Week": 23,
+   "Bike_out": 26
+ },
+ {
+   "StationId": 1000,
+   "Week": 24,
+   "Bike_out": 74
+ },
+ {
+   "StationId": 1017,
+   "Week": 24,
+   "Bike_out": 56
+ },
+ {
+   "StationId": 1013,
+   "Week": 24,
+   "Bike_out": 55
+ },
+ {
+   "StationId": 1010,
+   "Week": 24,
+   "Bike_out": 50
+ },
+ {
+   "StationId": 1038,
+   "Week": 24,
+   "Bike_out": 50
+ },
+ {
+   "StationId": 1041,
+   "Week": 25,
+   "Bike_out": 39
+ },
+ {
+   "StationId": 1038,
+   "Week": 25,
+   "Bike_out": 37
+ },
+ {
+   "StationId": 1045,
+   "Week": 25,
+   "Bike_out": 32
+ },
+ {
+   "StationId": 1047,
+   "Week": 25,
+   "Bike_out": 31
+ },
+ {
+   "StationId": 1000,
+   "Week": 25,
+   "Bike_out": 29
+ },
+ {
+   "StationId": 1001,
+   "Week": 26,
+   "Bike_out": 37
+ },
+ {
+   "StationId": 1045,
+   "Week": 26,
+   "Bike_out": 37
+ },
+ {
+   "StationId": 1010,
+   "Week": 26,
+   "Bike_out": 34
+ },
+ {
+   "StationId": 1000,
+   "Week": 26,
+   "Bike_out": 28
+ },
+ {
+   "StationId": 1017,
+   "Week": 26,
+   "Bike_out": 28
+ },
+ {
+   "StationId": 1001,
+   "Week": 27,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1045,
+   "Week": 27,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1000,
+   "Week": 27,
+   "Bike_out": 16
+ },
+ {
+   "StationId": 1010,
+   "Week": 27,
+   "Bike_out": 16
+ },
+ {
+   "StationId": 1047,
+   "Week": 27,
+   "Bike_out": 13
+ },
+ {
+   "StationId": 1040,
+   "Week": 28,
+   "Bike_out": 21
+ },
+ {
+   "StationId": 1038,
+   "Week": 28,
+   "Bike_out": 20
+ },
+ {
+   "StationId": 1028,
+   "Week": 28,
+   "Bike_out": 19
+ },
+ {
+   "StationId": 1041,
+   "Week": 28,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1047,
+   "Week": 28,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1038,
+   "Week": 29,
+   "Bike_out": 24
+ },
+ {
+   "StationId": 1041,
+   "Week": 29,
+   "Bike_out": 21
+ },
+ {
+   "StationId": 1028,
+   "Week": 29,
+   "Bike_out": 15
+ },
+ {
+   "StationId": 1040,
+   "Week": 29,
+   "Bike_out": 13
+ },
+ {
+   "StationId": 1029,
+   "Week": 29,
+   "Bike_out": 12
+ },
+ {
+   "StationId": 1038,
+   "Week": 30,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1041,
+   "Week": 30,
+   "Bike_out": 13
+ },
+ {
+   "StationId": 1040,
+   "Week": 30,
+   "Bike_out": 12
+ },
+ {
+   "StationId": 1037,
+   "Week": 30,
+   "Bike_out": 9
+ },
+ {
+   "StationId": 1036,
+   "Week": 30,
+   "Bike_out": 8
+ },
+ {
+   "StationId": 1038,
+   "Week": 31,
+   "Bike_out": 20
+ },
+ {
+   "StationId": 1041,
+   "Week": 31,
+   "Bike_out": 19
+ },
+ {
+   "StationId": 1020,
+   "Week": 31,
+   "Bike_out": 16
+ },
+ {
+   "StationId": 1040,
+   "Week": 31,
+   "Bike_out": 15
+ },
+ {
+   "StationId": 1045,
+   "Week": 31,
+   "Bike_out": 15
+ },
+ {
+   "StationId": 1038,
+   "Week": 32,
+   "Bike_out": 52
+ },
+ {
+   "StationId": 1041,
+   "Week": 32,
+   "Bike_out": 46
+ },
+ {
+   "StationId": 1045,
+   "Week": 32,
+   "Bike_out": 34
+ },
+ {
+   "StationId": 1000,
+   "Week": 32,
+   "Bike_out": 30
+ },
+ {
+   "StationId": 1036,
+   "Week": 32,
+   "Bike_out": 28
+ },
+ {
+   "StationId": 1038,
+   "Week": 33,
+   "Bike_out": 30
+ },
+ {
+   "StationId": 1041,
+   "Week": 33,
+   "Bike_out": 18
+ },
+ {
+   "StationId": 1037,
+   "Week": 33,
+   "Bike_out": 12
+ },
+ {
+   "StationId": 1000,
+   "Week": 33,
+   "Bike_out": 10
+ },
+ {
+   "StationId": 1001,
+   "Week": 33,
+   "Bike_out": 10
+ },
+ {
+   "StationId": 1045,
+   "Week": 34,
+   "Bike_out": 57
+ },
+ {
+   "StationId": 1001,
+   "Week": 34,
+   "Bike_out": 36
+ },
+ {
+   "StationId": 1041,
+   "Week": 34,
+   "Bike_out": 34
+ },
+ {
+   "StationId": 1038,
+   "Week": 34,
+   "Bike_out": 31
+ },
+ {
+   "StationId": 1036,
+   "Week": 34,
+   "Bike_out": 29
+ },
+ {
+   "StationId": 1038,
+   "Week": 35,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1041,
+   "Week": 35,
+   "Bike_out": 31
+ },
+ {
+   "StationId": 1045,
+   "Week": 35,
+   "Bike_out": 31
+ },
+ {
+   "StationId": 1049,
+   "Week": 35,
+   "Bike_out": 27
+ },
+ {
+   "StationId": 1039,
+   "Week": 35,
+   "Bike_out": 24
+ },
+ {
+   "StationId": 1001,
+   "Week": 36,
+   "Bike_out": 39
+ },
+ {
+   "StationId": 1012,
+   "Week": 36,
+   "Bike_out": 39
+ },
+ {
+   "StationId": 1045,
+   "Week": 36,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1049,
+   "Week": 36,
+   "Bike_out": 36
+ },
+ {
+   "StationId": 1000,
+   "Week": 36,
+   "Bike_out": 35
+ },
+ {
+   "StationId": 1045,
+   "Week": 37,
+   "Bike_out": 105
+ },
+ {
+   "StationId": 1000,
+   "Week": 37,
+   "Bike_out": 68
+ },
+ {
+   "StationId": 1010,
+   "Week": 37,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1012,
+   "Week": 37,
+   "Bike_out": 65
+ },
+ {
+   "StationId": 1001,
+   "Week": 37,
+   "Bike_out": 56
+ },
+ {
+   "StationId": 1045,
+   "Week": 38,
+   "Bike_out": 61
+ },
+ {
+   "StationId": 1000,
+   "Week": 38,
+   "Bike_out": 40
+ },
+ {
+   "StationId": 1041,
+   "Week": 38,
+   "Bike_out": 38
+ },
+ {
+   "StationId": 1049,
+   "Week": 38,
+   "Bike_out": 36
+ },
+ {
+   "StationId": 1012,
+   "Week": 38,
+   "Bike_out": 35
+ },
+ {
+   "StationId": 1045,
+   "Week": 39,
+   "Bike_out": 70
+ },
+ {
+   "StationId": 1000,
+   "Week": 39,
+   "Bike_out": 56
+ },
+ {
+   "StationId": 1037,
+   "Week": 39,
+   "Bike_out": 49
+ },
+ {
+   "StationId": 1012,
+   "Week": 39,
+   "Bike_out": 48
+ },
+ {
+   "StationId": 1038,
+   "Week": 39,
+   "Bike_out": 45
+ },
+ {
+   "StationId": 1045,
+   "Week": 40,
+   "Bike_out": 80
+ },
+ {
+   "StationId": 1000,
+   "Week": 40,
+   "Bike_out": 72
+ },
+ {
+   "StationId": 1001,
+   "Week": 40,
+   "Bike_out": 60
+ },
+ {
+   "StationId": 1012,
+   "Week": 40,
+   "Bike_out": 58
+ },
+ {
+   "StationId": 1036,
+   "Week": 40,
+   "Bike_out": 54
+ }
+]

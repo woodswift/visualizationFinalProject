@@ -13,11 +13,11 @@ function generateTopData(){
 //    var dataType = $("#dataFileType").val();
     var address = null;
     if(dataType === '1'){
-        address="./dataFile/top5Week.json";
+        address="./dataFile/top5outWeek.json";
     }else if(dataType=='2'){
-        address="./dataFile/top5Month.json";
+        address="./dataFile/top5outMonth.json";
     }else{
-        address="./dataFile/top5Quarter.json";
+        address="./dataFile/top5outQuarter.json";
     }
    
 //    doJson(address,createMap);
@@ -29,8 +29,12 @@ function generateTopData(){
 function filterTop(data){
     var arr =[];
     $.each(data,function(index,val){
+        console.log(val.Week);
+        console.log(weekNum);
         if(val.Week == weekNum){
-            arr.push(val.StationId);
+            var stationInfo = {id:val.StationId, bikeoutNum: val.Bike_out};
+            //console.log(stationInfo);
+            arr.push(stationInfo);
         }
     });
 //    return arr; 

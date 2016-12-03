@@ -25,9 +25,15 @@ function createMap(arrHighlight){
         //add new marker
         for(var i =0;i<arr.length;i++){
             if(match(arr[i].id,arrHighlight)){
-                map.addLayer(new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon}));	
+                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon});
+                map.addLayer(marker);
+                var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out);
             }else{
-                map.addLayer(new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude)));
+                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude));
+                map.addLayer(marker);
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty);
+                
             }
        }
     });
@@ -36,7 +42,17 @@ function createMap(arrHighlight){
 //return whether the station is highlight or not
 function match(id,arr){
     for(var i=0;i<arr.length;i++){
-        if(id === arr[i]) return true;
+        if(id === arr[i].id) return true;
     }
     return false;
+}
+
+function getHighlightBikein(id,arr){
+    for(var i = 0;i<arr.length;i++){
+        if(id === arr[i].id){
+            //console.log(arr[i].bikeInNum);
+            return arr[i].bikeoutNum;
+        } 
+    }
+    
 }
