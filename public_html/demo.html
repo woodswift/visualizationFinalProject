@@ -21,10 +21,12 @@
             <div id="chart" style="width: 100%;height: 60%;">
                 <p style="font-size: 20px;font-weight:bold;margin-bottom: 10px;">Use tab to change type(Week/Month/Quarter)</p>
                 <div id="tab">
-                    <div id="weekTab"  style="border-right: 0px;" class="tabSelected">Week</div>
-                    <div id="monthTab" style="border-right: 0px;" class="tabUnselected">Month</div>
-                    <div id="quarterTab"  class="tabUnselected">Quarter</div> 
+                    <div id="weekTab" val="1" style="border-right: 0px;" class="tabSelected">Week</div>
+                    <div id="monthTab" val="2" style="border-right: 0px;" class="tabUnselected">Month</div>
+                    <div id="quarterTab" val="3" class="tabUnselected">Quarter</div> 
                 </div>
+                <div id="temperatureBar"></div>
+                <div id="weatherBar"></div>
             </div>
             <div id="control" style="width: 100%;height: 40%;"></div>
         </div>
@@ -36,5 +38,6 @@
         <script type="text/javascript" src="./js/slider.js"></script>
         <script type="text/javascript" src="./js/controlTab.js"></script>
         <script type="text/javascript" src="./js/readTop5Data.js"></script>
+        <script type="text/javascript" src="./js/barChartTemperature.js"></script>
     </body>
 </html>
