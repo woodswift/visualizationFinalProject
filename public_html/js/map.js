@@ -15,6 +15,7 @@ function createMap(arrHighlight){
         //set highlight icon
         var myIcon = L.icon({iconUrl:'./img/marker-icon-2x_red.png',
                             iconAnchor: [12,41],
+                            popupAnchor: [0, -36],
                             shadowUrl:'https://unpkg.com/leaflet@1.0.1/dist/images/marker-shadow.png',
                             iconSize: [25,41]});
 
