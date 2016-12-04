@@ -29,8 +29,8 @@ function generateTopData(){
 function filterTop(data){
     var arr =[];
     $.each(data,function(index,val){
-        console.log(val.Week);
-        console.log(weekNum);
+//        console.log(val.Week);
+//        console.log(weekNum);
         if(val.Week == weekNum){
             var stationInfo = {id:val.StationId, bikeoutNum: val.Bike_out};
             //console.log(stationInfo);

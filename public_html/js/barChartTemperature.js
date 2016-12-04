@@ -1,9 +1,9 @@
 barChartTemperature();
 function barChartTemperature(){
     //set margin, width & height
-    var margin = {top:5,right :60,bottom:0,left:60},
-        w = 300-margin.left-margin.right,
-        h = 100-margin.top-margin.bottom;
+    var margin = {top:50,right :50,bottom:20,left:50},
+        w = 330-margin.left-margin.right,
+        h = 200-margin.top-margin.bottom;
         
     //set color category
     var color = d3.scale.category10();
@@ -11,6 +11,7 @@ function barChartTemperature(){
     //set x & y scale
     var x = d3.scale.ordinal()
         .rangeRoundBands([0,w],.1);
+
     var y = d3.scale.linear()
             .range([h,0]);
     
@@ -32,7 +33,8 @@ function barChartTemperature(){
             .tickSize(-w,0,0)
             .tickFormat("");
     //generate svg on in html
-    var svg = d3.select("#temperature").append("svg")
+    $("#temperatureBar").empty();
+    var svg = d3.select("#temperatureBar").append("svg")
             .attr("width",w+margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
             .append("g")
@@ -49,7 +51,7 @@ function barChartTemperature(){
     d3.csv("./dataFile/"+address + "_temperature_rank.csv",generateBarChart);
    
     function generateBarChart(data){
-        console.log(data);
+        
         //select data for the current week
         var currentArry =[];
         $.each(data,function(index,val){
@@ -62,7 +64,7 @@ function barChartTemperature(){
                 currentArry.push(info);
             }
         });
-        console.log(currentArry);
+//        console.log(currentArry);
         
         //use the key value in the dataset to define the color domain(customer, daily, subscriber, unknown)
         color.domain(d3.keys(currentArry[0]).filter(function(key){
@@ -71,18 +73,32 @@ function barChartTemperature(){
         
         //calculate the percentage of each user type(add to a new attribute named numbers)
         var sum = 0;
+        var maxSum = 0;
         currentArry.forEach(function(d){
             sum = parseFloat(d.customer) + parseFloat(d.daily) + parseFloat(d.subscriber) + parseFloat(d.unknown);
 //            console.log(sum);
+            if (sum > maxSum) {
+                maxSum = sum;
+            }
             var y0 = 0;
             var i = -1;
             var list = [parseFloat(d.customer), parseFloat(d.daily), parseFloat(d.subscriber), parseFloat(d.unknown)];
             d.numbers = color.domain().map(function(name){
                     i++;
 //                    console.log(list[i]);
+                    if(y0 != 0){
+                        y0temp = y0 / sum;
+                    }else{
+                        y0temp = 0;
+                    }
+                    y0 += list[i];
+                    y1 = y0;
+                    if(y1 != 0){
+                        y1 = y1 / sum;
+                    }
                     return{ name: name, 
-                            y0: y0 / sum,
-                            y1: (y0 += list[i]) / sum,
+                            y0: y0temp,
+                            y1: y1,
                             sum: sum,
                             val: list[i],
                             temperature: d.temperature
@@ -90,10 +106,10 @@ function barChartTemperature(){
             });
 //            console.log(d.numbers);
         });
-        
+//        console.log(maxSum);
         //set x & y domain(x->temperature type, y->0 to sum number)
         x.domain(currentArry.map(function(d){return d.temperature;}));
-        y.domain([0,d3.max(data,function(d) {return d.customer + d.daily + d.subscriber + d.unknown;})]);
+        y.domain([0,maxSum]);
         
         svg.append("g")
                 .attr("class","x axis")
@@ -105,27 +121,37 @@ function barChartTemperature(){
         svg.append("g")
                 .attr("class","grid")
                 .call(yGrid);
-        var state = svg.selectAll(".temperature")
-                .data(data)
+        var temperature = svg.selectAll(".temperature")
+                .data(currentArry)
                 .enter().append("g")
-                .attr("class","country")
+                .attr("class","temperature")
                 .attr("transform",function(d){
-                    return "translate(" + x(d.state) +",0)";
+                    return "translate(" + x(d.temperature) +",0)";
                 });
-        state.selectAll("rect")
-                .data(function(d){return d.states;})
+//        console.log(y(0));
+        temperature.selectAll("rect")
+                .data(function(d){return d.numbers;})
                 .enter().append("rect")
+                .style("fill",function(d) {return color(d.name);})
+                .attr("width",x.rangeBand())
+                .attr("val",function(d){return x(d.temperature);})
+                .attr("y",0)
+                .attr("height",0)
+                .attr("class","dataRect");
+        
+        temperature.selectAll(".dataRect")
                 .on("mouseover", function(d){
                     var color = $(this).css("fill");
                     $(this).css("fill","yellow");
-                    $("rect").mouseout(function(){
+                    $(this).mouseout(function(){
                         $(this).css("fill",color);
                         $(this).unbind("mouseout");
                     });
 
                     //Get this bar's x/y values, then augment for the tooltip
-                    var xPosition = parseFloat($(this).attr("val")) + x.rangeBand() / 2;
-                    var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
+                    var left = parseFloat($("body").css("width"))*0.8;
+                    var xPosition = parseFloat($(this).attr("val")) + x.rangeBand() / 2 + left + margin.left/2;
+                    var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h/2 + margin.top;
 //                    console.log(xPosition);
                     //Update the tooltip position and value
                     d3.select("#tooltip")
@@ -141,11 +167,60 @@ function barChartTemperature(){
                     //Hide the tooltip
                     d3.select("#tooltip").classed("hidden", true);
                  })
-                .style("fill",function(d) {return color(d.name);})
-                .attr("width",x.rangeBand())
-                .attr("val",function(d){return x(d.state);})
-                .attr("y",y(0))
-                .attr("height",0);
+//        console.log(y(0));
+        temperature.selectAll("rect")
+            .transition("size")
+            .duration(2000)
+            .attr("y",function(d){return (y(d.y1*d.sum));})
+            .attr("height",function(d){return ((y(d.y0)-y(d.y1))*d.sum);});
+    
+         var legend = svg.selectAll(".legend")
+                .data(color.domain().slice().reverse())
+                .enter().append("g")
+                .attr("class","legend")
+                .attr("transform",function(d,i){
+                return "translate(50,"+(i*15)+")";});
+
+        legend.append("rect")
+                .attr("x",w-10)
+                .attr("y",-1)
+                .attr("width",5)
+                .attr("height",5)
+                .style("fill",color);
+
+        legend.append("text")
+                .attr("x",w-15)
+                .attr("y",0)
+                .attr("dy",".35em")
+                .style("text-anchor","end")
+                .text(function(d){return d;});
+        
     } 
+
+    var labels = svg.append("g")
+            .attr("class","labels");
+
+    labels.append("text")
+            .attr("transform","rotate(-90)")
+            .attr("y",-28)
+            .attr("dy",".71em")
+            .style("text-anchor","end")
+            .text("Mean Bike Out Num");
+    labels.append("text")
+            .attr("y",145)
+            .attr("x",270)
+            .attr("dx",".71em")
+            .style("text-anchor","end")
+            .text("Temperature Type");
+    
+    var title = svg.append("g")
+            .attr("class","title");
+
+    title.append("text")
+            .attr("x",(w/2))
+            .attr("y",-30)
+            .attr("text-anchor","middle")
+            .style("font-size","12px")
+            .text("The Mean Bike Out Num for Different Temperature In Week " + weekNum);
 }
 
