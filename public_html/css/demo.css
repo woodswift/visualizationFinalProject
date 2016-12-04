@@ -31,6 +31,7 @@
 
 #tab{
     margin-left: 4px;
+    height:22px;
 }
 
 #tab div{
@@ -49,3 +50,6 @@
     background-color: lightgrey;
 }
 
+.figure div{
+    margin-top: 20px;
+}

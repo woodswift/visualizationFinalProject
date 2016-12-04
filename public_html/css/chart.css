@@ -8,7 +8,40 @@ svg{
 .axis path
 .axis line{
     fill:none;
-    stroke:#000;
+    stroke:lightgrey;
+}
+.axis .domain{
+    fill:none;
+}
+
+.dot1{
+    stroke:darkgreen;
+    fill:lightgreen;
+}
+.dot2{
+    stroke:orange;
+    fill:yellow;
+}
+.grid .tick{
+    stroke:lightgrey;
+    opacity:0;
+}
+.grid path{
+    fill: none;
+    stroke:lightgrey;
+    stroke-width:1.5px;
+}
+.line{
+    fill:none;
+    stroke:steelblue;
+    stroke-width:1.5px;
+}
+
+.dot1:hover,
+.dot2:hover
+{
+    stroke:red;
+    fill:red;
 }
 
 #tooltip.hidden {
