@@ -56,7 +56,7 @@ function scatterPlotWeekhour(){
     function generateScatterPlot(data){
         //drag useful data for current week
         var currentArry =[];
-        console.log(weekNum);
+//        console.log(weekNum);
         $.each(data,function(index,val){
             if(val.Week == weekNum){
                 
@@ -103,7 +103,7 @@ function scatterPlotWeekhour(){
                     return d3.max(c.values,function(v){return v.attendee;});
             })
         ]);
-        console.log(x("0"));
+//        console.log(x("0"));
         svg.selectAll(".dot1")
                 .data(currentArry)
                 .enter().append("circle")
@@ -209,6 +209,20 @@ function scatterPlotWeekhour(){
                .attr("dy",".35em")
                .style("text-anchor","end")
                .text(function(d){return d;});
+       var title = svg.append("g")
+            .data(currentArry)
+            .attr("class","title");
+
+        title.append("text")
+                .attr("x",(w/2))
+                .attr("y",-30)
+                .attr("text-anchor","middle")
+                .style("font-size","12px")
+                .text(function(d){if(address=="Month"){
+                                    return("Temporal Ride Patterns in the Course of Day During "+ d.dateNum)}
+                                  else{
+                                    return("Temporal Ride Patterns in the Course of Day During "+ address + " " + d.dateNum)}
+                                 });
 
     }
 //
@@ -228,17 +242,9 @@ function scatterPlotWeekhour(){
             .attr("y",-32)
             .attr("dy",".71em")
             .style("text-anchor","end")
-            .text("Bike Number");
+            .text("Daily Ride Counts");
 //
-    var title = svg.append("g")
-            .attr("class","title");
-
-    title.append("text")
-            .attr("x",(w/2))
-            .attr("y",-30)
-            .attr("text-anchor","middle")
-            .style("font-size","12px")
-            .text("Educational attainment of three categories from 1990 to 2009");
+    
 //
     }
     

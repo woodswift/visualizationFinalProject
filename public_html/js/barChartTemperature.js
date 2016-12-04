@@ -215,9 +215,9 @@ function barChartTemperature(){
             .attr("text-anchor","middle")
             .style("font-size","12px")
             .text(function(d){if(address=="Month"){
-                                return("Average Daily Ride Counts versus Temperature in "+ d.dateNum)}
+                                return("Average Daily Ride Counts Versus Temperature in "+ d.dateNum)}
                               else{
-                                return("Average Daily Ride Counts versus Temperature in "+ address + " " + d.dateNum)}
+                                return("Average Daily Ride Counts Versus Temperature in "+ address + " " + d.dateNum)}
                              });
         
     } 
