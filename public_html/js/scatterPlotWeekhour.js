@@ -1,9 +1,9 @@
 scatterPlotWeekhour();
 
 function scatterPlotWeekhour(){
-    var margin = {top:50,right:50,bottom:20,left:90},
+    var margin = {top:50,right:50,bottom:50,left:90},
         w = 430 - margin.left-margin.right,
-        h = 220 - margin.top - margin.bottom;
+        h = 250 - margin.top - margin.bottom;
     var x = d3.scale.linear().range([0,w]);
     var y = d3.scale.linear().range([h,0]);
     var color = d3.scale.category10();
@@ -56,9 +56,10 @@ function scatterPlotWeekhour(){
     function generateScatterPlot(data){
         //drag useful data for current week
         var currentArry =[];
-        
+        console.log(weekNum);
         $.each(data,function(index,val){
             if(val.Week == weekNum){
+                
                 if(dataType === '1'){
                     dateNum = weekNum;
                 }else if(dataType=='2'){
@@ -67,8 +68,8 @@ function scatterPlotWeekhour(){
                     dateNum = val.Quarter;
                 }
                var info = {hour:val.Hour,
-                           weekdayBikeout:val.Weekday_bike_out,
-                           weekendBikeout:val.Weekend_bike_out,
+                           weekday:val.Weekday_bike_out,
+                           weekend:val.Weekend_bike_out,
                            dateNum:dateNum};
                 currentArry.push(info); 
                 
@@ -109,7 +110,7 @@ function scatterPlotWeekhour(){
                 .attr("class","dot1")
                 .attr("r",2)
                 .attr("cx",function(d) {return x(d.hour);})
-                .attr("cy",function(d) {return y(d.weekdayBikeout);})
+                .attr("cy",function(d) {return y(d.weekday);})
 //                .on("mouseover", function(d){
 //                    //Get this bar's x/y values, then augment for the tooltip
 //                    var xPosition = parseFloat(d3.select(this).attr("cx"))+$("svg").position().left;
@@ -137,7 +138,7 @@ function scatterPlotWeekhour(){
                 .attr("class","dot2")
                 .attr("r",2)
                 .attr("cx",function(d) {return x(d.hour);})
-                .attr("cy",function(d) {return y(d.weekendBikeout);})
+                .attr("cy",function(d) {return y(d.weekend);})
 //                .on("mouseover", function(d){
 //                    //Get this bar's x/y values, then augment for the tooltip
 //                    var xPosition = parseFloat(d3.select(this).attr("cx"))+$("svg").position().left;
@@ -197,14 +198,14 @@ function scatterPlotWeekhour(){
 
         legend.append("rect")
                .attr("x",w-18)
-               .attr("y",4)
+               .attr("y",-5)
                .attr("width",10)
                .attr("height",10)
                .style("fill",color);
 
         legend.append("text")
                .attr("x",w-24)
-               .attr("y",9)
+               .attr("y",0)
                .attr("dy",".35em")
                .style("text-anchor","end")
                .text(function(d){return d;});
@@ -217,15 +218,17 @@ function scatterPlotWeekhour(){
     labels.append("text")
             .attr("transform","translate(0,"+h+")")
             .attr("x",(w-margin.right))
+            .attr("y",7)
             .attr("dx","1.90em")
             .attr("dy","2.0em")
             .text("Hour");
+    
     labels.append("text")
             .attr("transform","rotate(-90)")
-            .attr("y",-40)
+            .attr("y",-32)
             .attr("dy",".71em")
             .style("text-anchor","end")
-            .text("bike number");
+            .text("Bike Number");
 //
     var title = svg.append("g")
             .attr("class","title");
