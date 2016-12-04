@@ -39,6 +39,7 @@
     height: 20px;
     border: 1px solid black;
     float: left;
+    cursor: pointer;
 }
 
 .tabSelected{
