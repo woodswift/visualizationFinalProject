@@ -148,7 +148,7 @@ function barChartTemperature(){
                 .attr("height",0)
                 .attr("class","dataRect")
                 .transition("size")
-                .duration(2000)
+                .duration(1000)
                 .attr("y",function(d){return (y(d.y1*d.sum));})
                 .attr("height",function(d){return ((y(d.y0)-y(d.y1))*d.sum);});
         
@@ -171,7 +171,7 @@ function barChartTemperature(){
                         .style("left", xPosition + "px")
                         .style("top", yPosition + "px")						
                         .select("#value")
-                        .text(d.val);
+                        .text(Math.round(d.val*100)/100);
                     d3.select("#label").text(d.name);
                     //Show the tooltip
                     d3.select("#tooltip").classed("hidden", false);
@@ -214,7 +214,11 @@ function barChartTemperature(){
             .attr("y",-30)
             .attr("text-anchor","middle")
             .style("font-size","12px")
-            .text(function(d){return("The Mean Bike Out Num for Different Temperature in "+ address + " " + d.dateNum)});
+            .text(function(d){if(address=="Month"){
+                                return("Average Daily Ride Counts versus Temperature in "+ d.dateNum)}
+                              else{
+                                return("Average Daily Ride Counts versus Temperature in "+ address + " " + d.dateNum)}
+                             });
         
     } 
 
@@ -226,13 +230,13 @@ function barChartTemperature(){
             .attr("y",-28)
             .attr("dy",".71em")
             .style("text-anchor","end")
-            .text("Mean Bike Out Num");
+            .text("Daily Ride Counts");
     labels.append("text")
             .attr("y",145)
             .attr("x",270)
             .attr("dx",".71em")
             .style("text-anchor","end")
-            .text("Temperature Type");
+            .text("Temperature");
     
     
 }
