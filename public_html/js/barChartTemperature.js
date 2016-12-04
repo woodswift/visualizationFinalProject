@@ -42,11 +42,11 @@ function barChartTemperature(){
     
     //read data(name= timeType_dataType_rank.csv)
     if(dataType === '1'){
-        address="week";
+        address="Week";
     }else if(dataType=='2'){
-        address="month";
+        address="Month";
     }else{
-        address="quarter";
+        address="Quarter";
     }
     d3.csv("./dataFile/"+address + "_temperature_rank.csv",generateBarChart);
    
@@ -54,13 +54,22 @@ function barChartTemperature(){
         
         //select data for the current week
         var currentArry =[];
+        
         $.each(data,function(index,val){
             if(val.Week == weekNum){
+                if(dataType === '1'){
+                    dateNum = weekNum;
+                }else if(dataType=='2'){
+                    dateNum = val.Month;
+                }else{
+                    dateNum = val.Quarter;
+                }
                 var info = {temperature:val.TemperatureRank,
                             customer:val.Customer,
                             daily:val.Daily,
                             subscriber:val.Subscriber,
-                            unknown:val.Unknown};
+                            unknown:val.Unknown,
+                            dateNum:dateNum};
                 currentArry.push(info);
             }
         });
@@ -68,18 +77,18 @@ function barChartTemperature(){
         
         //use the key value in the dataset to define the color domain(customer, daily, subscriber, unknown)
         color.domain(d3.keys(currentArry[0]).filter(function(key){
-            return key !=="temperature";
+            return key !=="temperature" && key !=="dateNum";
         }));
         
         //calculate the percentage of each user type(add to a new attribute named numbers)
         var sum = 0;
-        var maxSum = 0;
+//        var maxSum = 0;
         currentArry.forEach(function(d){
             sum = parseFloat(d.customer) + parseFloat(d.daily) + parseFloat(d.subscriber) + parseFloat(d.unknown);
 //            console.log(sum);
-            if (sum > maxSum) {
-                maxSum = sum;
-            }
+//            if (sum > maxSum) {
+//                maxSum = sum;
+//            }
             var y0 = 0;
             var i = -1;
             var list = [parseFloat(d.customer), parseFloat(d.daily), parseFloat(d.subscriber), parseFloat(d.unknown)];
@@ -109,7 +118,7 @@ function barChartTemperature(){
 //        console.log(maxSum);
         //set x & y domain(x->temperature type, y->0 to sum number)
         x.domain(currentArry.map(function(d){return d.temperature;}));
-        y.domain([0,maxSum]);
+        y.domain([0,16.4]);
         
         svg.append("g")
                 .attr("class","x axis")
@@ -135,9 +144,13 @@ function barChartTemperature(){
                 .style("fill",function(d) {return color(d.name);})
                 .attr("width",x.rangeBand())
                 .attr("val",function(d){return x(d.temperature);})
-                .attr("y",0)
+                .attr("y",y(0))
                 .attr("height",0)
-                .attr("class","dataRect");
+                .attr("class","dataRect")
+                .transition("size")
+                .duration(2000)
+                .attr("y",function(d){return (y(d.y1*d.sum));})
+                .attr("height",function(d){return ((y(d.y0)-y(d.y1))*d.sum);});
         
         temperature.selectAll(".dataRect")
                 .on("mouseover", function(d){
@@ -168,11 +181,8 @@ function barChartTemperature(){
                     d3.select("#tooltip").classed("hidden", true);
                  })
 //        console.log(y(0));
-        temperature.selectAll("rect")
-            .transition("size")
-            .duration(2000)
-            .attr("y",function(d){return (y(d.y1*d.sum));})
-            .attr("height",function(d){return ((y(d.y0)-y(d.y1))*d.sum);});
+//        temperature.selectAll("rect")
+            
     
          var legend = svg.selectAll(".legend")
                 .data(color.domain().slice().reverse())
@@ -195,6 +205,17 @@ function barChartTemperature(){
                 .style("text-anchor","end")
                 .text(function(d){return d;});
         
+        var title = svg.append("g")
+            .data(currentArry)
+            .attr("class","title");
+
+        title.append("text")
+            .attr("x",(w/2))
+            .attr("y",-30)
+            .attr("text-anchor","middle")
+            .style("font-size","12px")
+            .text(function(d){return("The Mean Bike Out Num for Different Temperature in "+ address + " " + d.dateNum)});
+        
     } 
 
     var labels = svg.append("g")
@@ -213,14 +234,6 @@ function barChartTemperature(){
             .style("text-anchor","end")
             .text("Temperature Type");
     
-    var title = svg.append("g")
-            .attr("class","title");
-
-    title.append("text")
-            .attr("x",(w/2))
-            .attr("y",-30)
-            .attr("text-anchor","middle")
-            .style("font-size","12px")
-            .text("The Mean Bike Out Num for Different Temperature In Week " + weekNum);
+    
 }
 
