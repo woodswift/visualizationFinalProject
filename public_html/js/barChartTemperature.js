@@ -235,12 +235,10 @@ function barChartTemperature(stationId){
             .attr("y",-30)
             .attr("text-anchor","middle")
             .style("font-size","14px")
-            .text(function(d){
-                        console.log(d);
-                        if(address=="Month"){
-                                return("Average Daily Ride Counts Versus Temperature in "+ d.dateNum)}
+            .text(function(d){if(address=="Month"){
+                                    return("Average Daily Ride Counts Versus Temperature in "+ d.dateNum)}
                               else{
-                                return("Average Daily Ride Counts Versus Temperature in "+ address + " " + d.dateNum)}
+                                    return("Average Daily Ride Counts Versus Temperature in "+ address + " " + d.dateNum)}
                              });
         
     } 

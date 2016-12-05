@@ -24,7 +24,9 @@ function generateTopData(){
     d3.json(address,filterTop);
 }
 
-
+function generateTopDataForStation(){
+    d3.json("./dataFile/week_nearest.json",filterTopForStation);
+}
   
 function filterTop(data){
     var arr =[];
@@ -41,6 +43,22 @@ function filterTop(data){
     createMap(arr);
 }
 
+function filterTopForStation(data){
+    var arr =[];
+    $.each(data,function(index,val){
+//        console.log(val.Week);
+//        console.log(weekNum);
+        if(val.Week == weekNum && val.Station == stationId){
+            arr = [{id:val.Near1,count:val.Count1},
+                   {id:val.Near2,count:val.Count2},
+                   {id:val.Near3,count:val.Count3},
+                   {id:val.Near4,count:val.Count4},
+                   {id:val.Near5,count:val.Count5}];
+        }
+    });
+//    return arr; 
+    createMap(arr,true);
+}
 //function doJson(weekNum,address,fn){   
 //    var xmlhttp = new XMLHttpRequest(); 
 //    xmlhttp.open('GET',address);

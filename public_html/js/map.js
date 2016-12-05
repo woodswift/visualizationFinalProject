@@ -9,11 +9,16 @@ createMap([]);
 
 
 //add & refresh markers
-function createMap(arrHighlight){
+function createMap(arrHighlight,forStation){
     d3.json("./dataFile/Station_info.json",function(arr){
-        
+        var iconUrl;
+        if(forStation){
+            iconUrl = './img/marker-icon-green.png';
+        }else{
+            iconUrl = './img/marker-icon-red.png';
+        }
         //set highlight icon
-        var myIcon = L.icon({iconUrl:'./img/marker-icon-2x_red.png',
+        var myIcon = L.icon({iconUrl:iconUrl,
                             iconAnchor: [12,41],
                             popupAnchor: [0, -36],
                             shadowUrl:'https://unpkg.com/leaflet@1.0.1/dist/images/marker-shadow.png',
@@ -35,30 +40,23 @@ function createMap(arrHighlight){
                 map.addLayer(marker);
                 marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show detail</button>');
             }
-//            console.log($("#"+arr[i].id));
-           
-//            var stationId = arr[i].id;
-//            marker.on("click", function(){
-//                console.log($(this).attr("alt"));
-////                $("#chart").addClass("hide");
-////                $("#singleChart").removeClass("hide");
-////                barChartTemperature(stationId);
-//            });
-            
        }
     });
 }
-$(".leaflet-marker-pane").on("click",function(e){
-    var target = e.target||e.srcElement;
-    if(target.nodeName.toLowerCase()=='img'){
-        console.log($(target).attr('alt'));
-    }
-});
+//$(".leaflet-marker-pane").on("click",function(e){
+//    var target = e.target||e.srcElement;
+//    if(target.nodeName.toLowerCase()=='img'){
+//        console.log($(target).attr('alt'));
+//        
+//    }
+//});
 function showDetail(me){
     $("#chart").addClass("hide");
     $("#singleChart").removeClass("hide");
     stationId = $(me).attr("id");
+    showStationDetail = true;
     $("#stationName").html(stationId);
+    generateTopDataForStation(stationId);
     barChartTemperature(stationId);
     barChartWeather(stationId);
     scatterPlotWeekhour(stationId);
@@ -67,6 +65,8 @@ function showDetail(me){
 $("#return").on("click",function(){
     $("#chart").removeClass("hide");
     $("#singleChart").addClass("hide");
+    showStationDetail = false;
+    generateTopData();
 });
 
 //return whether the station is highlight or not
