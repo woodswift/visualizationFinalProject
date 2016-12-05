@@ -55,7 +55,9 @@
     margin-top: 20px;
 }
 
-
+#description p{
+    margin-left: 10px
+}
 .legend {
     text-align: left;
     line-height: 18px;
