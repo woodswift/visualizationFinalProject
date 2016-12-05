@@ -73,3 +73,27 @@ function getHighlightBikein(id,arr){
     }
     
 }
+
+
+function getColour(d) {
+    switch (d) {
+        case 'Popular Station': return '#e41a1c';
+        case 'Normal Station': return '#3C6DDF';
+        default: return '#fff';
+    }
+};
+
+var legend = L.control({position: 'topright'});
+
+legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend');
+        faultstatus = ['Popular Station', 'Normal Station'];
+
+    // loop through the status values and generate a label with a coloured square for each value
+    for (var i = 0; i < faultstatus.length; i++) {
+        div.innerHTML +=
+            '<i class="circle" style="background:' + getColour(faultstatus[i]) + '"></i> ' + (faultstatus[i] ? faultstatus[i] + '<br>' : '+');
+    }
+    return div;
+};
+legend.addTo(map);
