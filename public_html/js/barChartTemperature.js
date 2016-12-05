@@ -1,5 +1,5 @@
 barChartTemperature();
-function barChartTemperature(){
+function barChartTemperature(stationId){
     //set margin, width & height
     var margin = {top:50,right :50,bottom:20,left:50},
         w = 330-margin.left-margin.right,
@@ -33,7 +33,10 @@ function barChartTemperature(){
             .tickSize(-w,0,0)
             .tickFormat("");
     //generate svg on in html
-    $("#temperatureBar").empty();
+    var positionId;
+    if(stationId != null) positionId = "#singleTemperatureBar";
+    else positionId = "#temperatureBar";
+    $(positionId).empty();
     var svg = d3.select("#temperatureBar").append("svg")
             .attr("width",w+margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
@@ -48,7 +51,10 @@ function barChartTemperature(){
     }else{
         address="Quarter";
     }
-    d3.csv("./dataFile/"+address + "_temperature_rank.csv",generateBarChart);
+    var fullAddr;
+    if(stationId != null) fullAddr = "Week_temperature_rank_stationId.csv";
+    else fullAddr = address + "_temperature_rank.csv";
+    d3.csv("./dataFile/"+fullAddr,generateBarChart);
    
     function generateBarChart(data){
         
@@ -56,7 +62,12 @@ function barChartTemperature(){
         var currentArry =[];
         
         $.each(data,function(index,val){
-            if(val.Week == weekNum){
+            if(stationId != null){
+                var bool = val.Week == weekNum && val.StationId == stationId
+            }else{
+                var bool = val.Week == weekNum
+            }
+            if(bool){
                 if(dataType === '1'){
                     dateNum = weekNum;
                 }else if(dataType=='2'){

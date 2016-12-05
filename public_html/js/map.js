@@ -22,7 +22,7 @@ function createMap(arrHighlight){
         //clear old marker
         $(".leaflet-marker-pane").empty();
         $(".leaflet-shadow-pane").empty();
-
+        
         //add new marker
         for(var i =0;i<arr.length;i++){
             if(match(arr[i].id,arrHighlight)){
@@ -34,8 +34,15 @@ function createMap(arrHighlight){
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude));
                 map.addLayer(marker);
                 marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty);
-                
             }
+            marker.on("click", function(){
+                console.log(i)
+                console.log();
+                $("#chart").addClass("hide");
+                $("#singleChart").removeClass("hide");
+                var stationId = arr[i].id;
+            });
+            
        }
     });
 }
