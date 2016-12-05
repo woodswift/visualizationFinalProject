@@ -58,9 +58,10 @@ function showDetail(me){
     $("#chart").addClass("hide");
     $("#singleChart").removeClass("hide");
     stationId = $(me).attr("id");
+    $("#stationName").html(stationId);
     barChartTemperature(stationId);
     barChartWeather(stationId);
-    scatterPlotWeekhour(stationId)
+    scatterPlotWeekhour(stationId);
 }
 
 $("#return").on("click",function(){
