@@ -78,7 +78,7 @@ function barChartWeather(stationId){
                 if(stationId != null){
                     dateNum = weekNum;
                 }
-                var info = {weather:val.WeatherRank,
+                var info = {weather:changeWeatherRank(val.WeatherRank),
                             customer:val.Customer,
                             daily:val.Daily,
                             subscriber:val.Subscriber,
@@ -87,6 +87,17 @@ function barChartWeather(stationId){
                 currentArry.push(info);
             }
         });
+        function changeWeatherRank(weatherRank){
+            if(weatherRank == "0"){
+                return "Good";
+            }else if(weatherRank == "1"){
+                return "Mild";
+            }else if(weatherRank == "2"){
+                return "Poor";
+            }else{
+                return "Severe";
+            }
+        }
 //        console.log(currentArry);
         
         //use the key value in the dataset to define the color domain(customer, daily, subscriber, unknown)

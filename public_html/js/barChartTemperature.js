@@ -79,7 +79,7 @@ function barChartTemperature(stationId){
                 if(stationId != null){
                     dateNum = weekNum;
                 }
-                var info = {temperature:val.TemperatureRank,
+                var info = {temperature:changeTempRank(val.TemperatureRank),
                             customer:val.Customer,
                             daily:val.Daily,
                             subscriber:val.Subscriber,
@@ -88,6 +88,17 @@ function barChartTemperature(stationId){
                 currentArry.push(info);
             }
         });
+        function changeTempRank(temperatureRank){
+            if(temperatureRank == "0"){
+                return "<0";
+            }else if(temperatureRank == "1"){
+                return "[0,10)"
+            }else if(temperatureRank == "2"){
+                return "[10,20)"
+            }else{
+                return ">20"
+            }
+        }
 //        console.log(currentArry);
         
         //use the key value in the dataset to define the color domain(customer, daily, subscriber, unknown)
