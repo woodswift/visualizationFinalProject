@@ -43,7 +43,7 @@ d3.select('#slider').call(slider)
         scatterPlotWeekhour();
         barChartTemperature(stationId);
         barChartWeather(stationId);
-        scatterPlotWeekhour(stationId)
+        scatterPlotWeekhour(stationId);
     }).on("mousedown",function(){
         $(this).data("flag",true);
     });
@@ -52,7 +52,11 @@ $(document).on("mousemove",function(){
     if(elem.data("flag")){
 //        $('#weekNum').val(slider.value());
         weekNum = slider.value();
-        generateTopData();
+        if(showStationDetail){
+            generateTopDataForStation(stationId);
+        }else{
+            generateTopData(); 
+        }
         barChartTemperature();
         barChartWeather();
         scatterPlotWeekhour();
