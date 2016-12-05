@@ -1,5 +1,5 @@
-barChartTemperature();
-function barChartTemperature(stationId){
+barChartWeather();
+function barChartWeather(){
     //set margin, width & height
     var margin = {top:50,right :50,bottom:20,left:50},
         w = 330-margin.left-margin.right,
@@ -33,11 +33,8 @@ function barChartTemperature(stationId){
             .tickSize(-w,0,0)
             .tickFormat("");
     //generate svg on in html
-    var positionId;
-    if(stationId != null) positionId = "#singleTemperatureBar";
-    else positionId = "#temperatureBar";
-    $(positionId).empty();
-    var svg = d3.select("#temperatureBar").append("svg")
+    $("#weatherBar").empty();
+    var svg = d3.select("#weatherBar").append("svg")
             .attr("width",w+margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
             .append("g")
@@ -51,10 +48,7 @@ function barChartTemperature(stationId){
     }else{
         address="Quarter";
     }
-    var fullAddr;
-    if(stationId != null) fullAddr = "Week_temperature_rank_stationId.csv";
-    else fullAddr = address + "_temperature_rank.csv";
-    d3.csv("./dataFile/"+fullAddr,generateBarChart);
+    d3.csv("./dataFile/"+address + "_weather_rank.csv",generateBarChart);
    
     function generateBarChart(data){
         
@@ -62,12 +56,7 @@ function barChartTemperature(stationId){
         var currentArry =[];
         
         $.each(data,function(index,val){
-            if(stationId != null){
-                var bool = val.Week == weekNum && val.StationId == stationId
-            }else{
-                var bool = val.Week == weekNum
-            }
-            if(bool){
+            if(val.Week == weekNum){
                 if(dataType === '1'){
                     dateNum = weekNum;
                 }else if(dataType=='2'){
@@ -75,7 +64,7 @@ function barChartTemperature(stationId){
                 }else{
                     dateNum = val.Quarter;
                 }
-                var info = {temperature:val.TemperatureRank,
+                var info = {weather:val.WeatherRank,
                             customer:val.Customer,
                             daily:val.Daily,
                             subscriber:val.Subscriber,
@@ -88,7 +77,7 @@ function barChartTemperature(stationId){
         
         //use the key value in the dataset to define the color domain(customer, daily, subscriber, unknown)
         color.domain(d3.keys(currentArry[0]).filter(function(key){
-            return key !=="temperature" && key !=="dateNum";
+            return key !=="weather" && key !=="dateNum";
         }));
         
         //calculate the percentage of each user type(add to a new attribute named numbers)
@@ -121,14 +110,14 @@ function barChartTemperature(stationId){
                             y1: y1,
                             sum: sum,
                             val: list[i],
-                            temperature: d.temperature
+                            weather: d.weather
                         };	
             });
 //            console.log(d.numbers);
         });
 //        console.log(maxSum);
-        //set x & y domain(x->temperature type, y->0 to sum number)
-        x.domain(currentArry.map(function(d){return d.temperature;}));
+        //set x & y domain(x->weather type, y->0 to sum number)
+        x.domain(currentArry.map(function(d){return d.weather;}));
         y.domain([0,16.4]);
         
         svg.append("g")
@@ -141,20 +130,20 @@ function barChartTemperature(stationId){
         svg.append("g")
                 .attr("class","grid")
                 .call(yGrid);
-        var temperature = svg.selectAll(".temperature")
+        var weather = svg.selectAll(".weather")
                 .data(currentArry)
                 .enter().append("g")
-                .attr("class","temperature")
+                .attr("class","weather")
                 .attr("transform",function(d){
-                    return "translate(" + x(d.temperature) +",0)";
+                    return "translate(" + x(d.weather) +",0)";
                 });
 //        console.log(y(0));
-        temperature.selectAll("rect")
+        weather.selectAll("rect")
                 .data(function(d){return d.numbers;})
                 .enter().append("rect")
                 .style("fill",function(d) {return color(d.name);})
                 .attr("width",x.rangeBand())
-                .attr("val",function(d){return x(d.temperature);})
+                .attr("val",function(d){return x(d.weather);})
                 .attr("y",y(0))
                 .attr("height",0)
                 .attr("class","dataRect")
@@ -163,7 +152,7 @@ function barChartTemperature(stationId){
                 .attr("y",function(d){return (y(d.y1*d.sum));})
                 .attr("height",function(d){return ((y(d.y0)-y(d.y1))*d.sum);});
         
-        temperature.selectAll(".dataRect")
+        weather.selectAll(".dataRect")
                 .on("mouseover", function(d){
                     var color = $(this).css("fill");
                     $(this).css("fill","yellow");
@@ -226,9 +215,9 @@ function barChartTemperature(stationId){
             .attr("text-anchor","middle")
             .style("font-size","14px")
             .text(function(d){if(address=="Month"){
-                                return("Average Daily Ride Counts Versus Temperature in "+ d.dateNum)}
+                                return("Average Daily Ride Counts Versus Weather in "+ d.dateNum)}
                               else{
-                                return("Average Daily Ride Counts Versus Temperature in "+ address + " " + d.dateNum)}
+                                return("Average Daily Ride Counts Versus Weather in "+ address + " " + d.dateNum)}
                              });
         
     } 
@@ -247,7 +236,7 @@ function barChartTemperature(stationId){
             .attr("x",270)
             .attr("dx",".71em")
             .style("text-anchor","end")
-            .text("Temperature");
+            .text("Weather");
     
     
 }

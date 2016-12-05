@@ -35,6 +35,7 @@ d3.select('#slider').call(slider)
         weekNum = self.slider.value();
         generateTopData();
         barChartTemperature();
+        barChartWeather();
         scatterPlotWeekhour();
     }).on("mousedown",function(){
         $(this).data("flag",true);
@@ -46,6 +47,7 @@ $(document).on("mousemove",function(){
         weekNum = slider.value();
         generateTopData();
         barChartTemperature();
+        barChartWeather();
         scatterPlotWeekhour();
     }
 }).on("mouseup",function(){
