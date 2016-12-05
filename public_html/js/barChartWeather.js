@@ -75,6 +75,9 @@ function barChartWeather(stationId){
                 }else{
                     dateNum = val.Quarter;
                 }
+                if(stationId != null){
+                    dateNum = weekNum;
+                }
                 var info = {weather:val.WeatherRank,
                             customer:val.Customer,
                             daily:val.Daily,

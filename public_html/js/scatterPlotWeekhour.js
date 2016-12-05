@@ -81,7 +81,10 @@ function scatterPlotWeekhour(stationId){
                 }else{
                     dateNum = val.Quarter;
                 }
-               var info = {hour:val.Hour,
+                if(stationId != null){
+                    dateNum = weekNum;
+                }
+                var info = {hour:val.Hour,
                            weekday:val.Weekday_bike_out,
                            weekend:val.Weekend_bike_out,
                            dateNum:dateNum};
