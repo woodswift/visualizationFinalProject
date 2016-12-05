@@ -34,11 +34,11 @@ function createMap(arrHighlight,forStation){
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon,alt:arr[i].id});
                 map.addLayer(marker);
                 var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show detail</button>');
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>');
             }else{
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{alt:arr[i].id});
                 map.addLayer(marker);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show detail</button>');
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>');
             }
        }
     });

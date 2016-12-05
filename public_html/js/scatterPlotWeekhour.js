@@ -3,7 +3,7 @@ scatterPlotWeekhour();
 function scatterPlotWeekhour(stationId){
     var margin = {top:50,right:50,bottom:50,left:90},
         w = 430 - margin.left-margin.right,
-        h = 250 - margin.top - margin.bottom;
+        h = 235 - margin.top - margin.bottom;
     var x = d3.scale.linear().range([0,w]);
     var y = d3.scale.linear().range([h,0]);
     var color = d3.scale.category10();
@@ -234,7 +234,7 @@ function scatterPlotWeekhour(stationId){
                 .attr("x",(w/2))
                 .attr("y",-30)
                 .attr("text-anchor","middle")
-                .style("font-size","14px")
+                .style("font-size","13px")
                 .text(function(d){if(address=="Month"){
                                     return("Temporal Ride Patterns in the Course of Day During "+ d.dateNum)}
                                   else{
@@ -259,7 +259,7 @@ function scatterPlotWeekhour(stationId){
             .attr("y",-32)
             .attr("dy",".71em")
             .style("text-anchor","end")
-            .text("Daily Ride Counts");
+            .text("Hourly Ride Counts");
 //
     
 //
