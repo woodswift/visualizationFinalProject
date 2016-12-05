@@ -94,6 +94,7 @@ function getColour(d) {
     switch (d) {
         case 'Popular Station': return '#e41a1c';
         case 'Normal Station': return '#3C6DDF';
+        case 'Frequent Destination': return '#76e45b';
         default: return '#fff';
     }
 };
@@ -102,7 +103,7 @@ var legend = L.control({position: 'topright'});
 
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend');
-        faultstatus = ['Popular Station', 'Normal Station'];
+        faultstatus = ['Popular Station', 'Normal Station','Frequent Destination'];
 
     // loop through the status values and generate a label with a coloured square for each value
     for (var i = 0; i < faultstatus.length; i++) {
