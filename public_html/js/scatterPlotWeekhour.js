@@ -259,7 +259,7 @@ function scatterPlotWeekhour(stationId){
             .attr("y",-32)
             .attr("dy",".71em")
             .style("text-anchor","end")
-            .text("Daily Ride Counts");
+            .text("Hourly Ride Counts");
 //
     
 //
