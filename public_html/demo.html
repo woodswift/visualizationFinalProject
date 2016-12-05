@@ -11,30 +11,33 @@
         <link rel="stylesheet" type="text/css" href="./css/demo.css"/>
         <link rel="stylesheet" type="text/css" href="./css/chart.css"/>
     </head>
-    <body style="width: 1280px;height:1000px;margin:auto;background-color: #FBFCFC ;">
-<!--        <input class="valuechange" id="weekNum" type="hidden" value="1">
-        <input class="valuechange" id="dataFileType" type="hidden" value="1">-->
-        <div class="left">
-            <h3> &nbsp &nbsp All You Need to Know about Healthy Ride in Steel City </h3>
-            <div id="slider" style="width: 100%;height: 10%;"></div>
-            <div id="map" style="width: 100%;height: 90%;"></div>
+    <body style="width: 1280px;height:1100px;margin:auto;background-color: #FBFCFC ;">
+        <div class="header">
+            <div style="float:left;">
+                <h3> &nbsp &nbsp All You Need to Know about Healthy Ride in Steel City </h3>
+            </div>
+            <div class="returnMain"> Main Menu : <a href="index.html"> Click Here </a> </div>
         </div>
-        <div class="right"><br>
-            <div align = "right"> Main Menu : <a href="index.html"> Click Here </a> </div>
-            <div id="chart" style="width: 100%;height: 75%;">
-                <p style="font-size: 20px;font-weight:bold;margin-bottom: 10px;"> Ride Patterns of the System Average </p>
+        <div class="left">
+            <div id="slider" style="width: 100%;height: 10%;"></div>
+            <div id="map" style="width: 100%;height: 90%;">
+            </div>
+        </div>
+        <div class="right">
+            <div id="chart" style="width: 100%;height: 70%;">
                 <div id="tab">
-                    <div id="weekTab" val="1" style="border-right: 0px;" class="tabSelected">Week</div>
+                    <div id="weekTab" val="1" style="border-right:1px solid black;" class="tabSelected">Week</div>
                     <div id="monthTab" val="2" style="border-right: 0px;" class="tabUnselected">Month</div>
                     <div id="quarterTab" val="3" class="tabUnselected">Quarter</div> 
                 </div>
+                <p style="font-size: 20px;font-weight:bold;"> Ride Patterns of the System Average </p>
                 <div class="figure">
                     <div id="temperatureBar"></div>
                     <div id="weatherBar"></div>
                     <div id="weekhourScatterPlot"></div>
                 </div>
             </div>
-            <div id="singleChart" class="hide" style="width: 100%;height: 75%;">
+            <div id="singleChart" class="hide" style="width: 100%;height: 70%;">
                 <div id="return"></div>
                 <p><strong style="font-size: 20px;">Ride Patterns of the Station <span id="stationName">100</span></strong></p>
                 <div class="figure">
@@ -48,8 +51,8 @@
                 <p><span id="value">100</span></p>
             </div>
             
-            <div id="description" style="width: 100%;height: 35%;">
-                <p style="font-size: 10px;"> 
+            <div id="description" style="width: 100%;height: 30%;font-size: 12px;">
+                <p>
                     The system offers three rider types including: <br>
                     Customer: pay as-you-go customer <br>
                     Daily: 24-hour pass customer <br>
@@ -57,7 +60,7 @@
                     The "unknown" indicates the ride of which the rider type is missing. 
                     Each rider type has its own pricing scheme.
                 </p>
-                <p style="font-size: 10px;">
+                <p>
                     The chart "Average Daily Ride Counts versus Weather" measures 
                     the average daily ride counts per station in the different weather
                     conditions including:<br>
@@ -66,12 +69,12 @@
                     Poor: rain, fog or freezing <br>
                     Severe: snow or thunderstorm <br>
                 </p>
-                <p style="font-size: 10px;">
+                <p>
                     The chart "Average Daily Ride Counts versus Temperature" measures 
                     the average daily ride counts per station in the different temperature
                     conditions, and the temperature unit is centigrade.
                 </p>
-                <p style="font-size: 10px;">
+                <p>
                     The plot "Temporal Ride Patterns in the course of day" compares  
                     the average hourly ride counts per station in the course of day 
                     which is on the weekend or not.

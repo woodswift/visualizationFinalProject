@@ -27,18 +27,20 @@ function createMap(arrHighlight,forStation){
         //clear old marker
         $(".leaflet-marker-pane").empty();
         $(".leaflet-shadow-pane").empty();
+//        $(".leaflet-popup").remove();
         
         //add new marker
         for(var i =0;i<arr.length;i++){
+            var popUpHtml = '<b>'+arr[i].Name+'</b><br/><b>StationId: </b>'+arr[i].id+'<br/><b>RackQnty: </b>' +arr[i].RackQnty+'<br/><br/><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>';
             if(match(arr[i].id,arrHighlight)){
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon,alt:arr[i].id});
                 map.addLayer(marker);
-                var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>');
+//                var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
+                marker.bindPopup(popUpHtml);
             }else{
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{alt:arr[i].id});
                 map.addLayer(marker);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>');
+                marker.bindPopup(popUpHtml);
             }
        }
     });
