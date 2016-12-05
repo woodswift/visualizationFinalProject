@@ -277,7 +277,7 @@ function barChartTemperature(stationId){
             .attr("x",270)
             .attr("dx",".71em")
             .style("text-anchor","end")
-            .text("Temperature");
+            .text("Temperature(°C)");
     
     
 }
