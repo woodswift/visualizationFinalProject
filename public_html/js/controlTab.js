@@ -12,6 +12,7 @@ function clickEvent(){
         dataType = $(this).attr("val");
         generateTopData();
         barChartTemperature();
+        barChartWeather();
         scatterPlotWeekhour();
     }
 }

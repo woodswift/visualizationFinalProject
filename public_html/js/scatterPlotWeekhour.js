@@ -217,7 +217,7 @@ function scatterPlotWeekhour(){
                 .attr("x",(w/2))
                 .attr("y",-30)
                 .attr("text-anchor","middle")
-                .style("font-size","12px")
+                .style("font-size","14px")
                 .text(function(d){if(address=="Month"){
                                     return("Temporal Ride Patterns in the Course of Day During "+ d.dateNum)}
                                   else{

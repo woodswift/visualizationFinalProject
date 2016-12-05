@@ -77,4 +77,6 @@ margin-top: 8px;
 
 .leaflet-top .legend{
 	font-weight:bold;
+.hide{
+    display: none;
 }
