@@ -29,22 +29,31 @@ function createMap(arrHighlight){
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon});
                 map.addLayer(marker);
                 var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out);
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail()">Show detail</button>');
             }else{
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude));
                 map.addLayer(marker);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty);
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail()">Show detail</button>');
             }
-            marker.on("click", function(){
-                console.log(i)
-                console.log();
-                $("#chart").addClass("hide");
-                $("#singleChart").removeClass("hide");
-                var stationId = arr[i].id;
-            });
+//            console.log($("#"+arr[i].id));
+           
+//            var stationId = arr[i].id;
+//            marker.on("click", function(){
+//                console.log(stationId);
+//                $("#chart").addClass("hide");
+//                $("#singleChart").removeClass("hide");
+//                barChartTemperature(stationId);
+//            });
             
        }
     });
+}
+
+function showDetail(){
+    $("#chart").addClass("hide");
+    $("#singleChart").removeClass("hide");
+    console.log($(this).)
+    barChartTemperature();
 }
 
 //return whether the station is highlight or not

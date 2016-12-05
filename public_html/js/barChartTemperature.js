@@ -37,7 +37,7 @@ function barChartTemperature(stationId){
     if(stationId != null) positionId = "#singleTemperatureBar";
     else positionId = "#temperatureBar";
     $(positionId).empty();
-    var svg = d3.select("#temperatureBar").append("svg")
+    var svg = d3.select(positionId).append("svg")
             .attr("width",w+margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
             .append("g")
@@ -54,6 +54,7 @@ function barChartTemperature(stationId){
     var fullAddr;
     if(stationId != null) fullAddr = "Week_temperature_rank_stationId.csv";
     else fullAddr = address + "_temperature_rank.csv";
+//    console.log(fullAddr);
     d3.csv("./dataFile/"+fullAddr,generateBarChart);
    
     function generateBarChart(data){

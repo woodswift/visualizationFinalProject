@@ -1,4 +1,4 @@
-"","Week","StationId","Temperature.rank","Bike_out","Customer","Daily","Subscriber","Unknown"
+"","Week","StationId","TemperatureRank","Bike_out","Customer","Daily","Subscriber","Unknown"
 "1","1",1000,"0",0,0,0,0,0
 "2","1",1000,"1",0,0,0,0,0
 "3","1",1000,"2",29,20.6666666666667,0,8.33333333333333,0
