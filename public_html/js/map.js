@@ -26,35 +26,47 @@ function createMap(arrHighlight){
         //add new marker
         for(var i =0;i<arr.length;i++){
             if(match(arr[i].id,arrHighlight)){
-                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon});
+                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon,alt:arr[i].id});
                 map.addLayer(marker);
                 var bike_out = getHighlightBikein(arr[i].id,arrHighlight);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail()">Show detail</button>');
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br>Bike_out: '+bike_out+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show detail</button>');
             }else{
-                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude));
+                var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{alt:arr[i].id});
                 map.addLayer(marker);
-                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail()">Show detail</button>');
+                marker.bindPopup('<b>StationId: '+arr[i].id+'</br>'+arr[i].Name+'</b><br>RackQnty:' +arr[i].RackQnty+'<br><br><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show detail</button>');
             }
 //            console.log($("#"+arr[i].id));
            
 //            var stationId = arr[i].id;
 //            marker.on("click", function(){
-//                console.log(stationId);
-//                $("#chart").addClass("hide");
-//                $("#singleChart").removeClass("hide");
-//                barChartTemperature(stationId);
+//                console.log($(this).attr("alt"));
+////                $("#chart").addClass("hide");
+////                $("#singleChart").removeClass("hide");
+////                barChartTemperature(stationId);
 //            });
             
        }
     });
 }
-
-function showDetail(){
+$(".leaflet-marker-pane").on("click",function(e){
+    var target = e.target||e.srcElement;
+    if(target.nodeName.toLowerCase()=='img'){
+        console.log($(target).attr('alt'));
+    }
+});
+function showDetail(me){
     $("#chart").addClass("hide");
     $("#singleChart").removeClass("hide");
-    console.log($(this).)
-    barChartTemperature();
+    stationId = $(me).attr("id");
+    barChartTemperature(stationId);
+    barChartWeather(stationId);
+    scatterPlotWeekhour(stationId)
 }
+
+$("#return").on("click",function(){
+    $("#chart").removeClass("hide");
+    $("#singleChart").addClass("hide");
+});
 
 //return whether the station is highlight or not
 function match(id,arr){

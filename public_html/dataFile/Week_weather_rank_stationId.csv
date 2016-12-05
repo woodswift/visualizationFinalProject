@@ -1,4 +1,4 @@
-"","Week","StationId","Weather.rank","Bike_out","Customer","Daily","Subscriber","Unknown"
+"","Week","StationId","WeatherRank","Bike_out","Customer","Daily","Subscriber","Unknown"
 "1","1",1000,"0",17,13,0,4,0
 "2","1",1000,"1",35,24.5,0,10.5,0
 "3","1",1000,"2",74,64,0,10,0

@@ -1,5 +1,5 @@
 barChartWeather();
-function barChartWeather(){
+function barChartWeather(stationId){
     //set margin, width & height
     var margin = {top:50,right :50,bottom:20,left:50},
         w = 330-margin.left-margin.right,
@@ -33,8 +33,11 @@ function barChartWeather(){
             .tickSize(-w,0,0)
             .tickFormat("");
     //generate svg on in html
-    $("#weatherBar").empty();
-    var svg = d3.select("#weatherBar").append("svg")
+    var positionId;
+    if(stationId != null) positionId = "#singleWeatherBar";
+    else positionId = "#weatherBar";
+    $(positionId).empty();
+    var svg = d3.select(positionId).append("svg")
             .attr("width",w+margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
             .append("g")
@@ -48,7 +51,10 @@ function barChartWeather(){
     }else{
         address="Quarter";
     }
-    d3.csv("./dataFile/"+address + "_weather_rank.csv",generateBarChart);
+    var fullAddr;
+    if(stationId != null) fullAddr = "Week_weather_rank_stationId.csv";
+    else fullAddr = address + "_weather_rank.csv";
+    d3.csv("./dataFile/"+fullAddr,generateBarChart);
    
     function generateBarChart(data){
         
@@ -56,7 +62,12 @@ function barChartWeather(){
         var currentArry =[];
         
         $.each(data,function(index,val){
-            if(val.Week == weekNum){
+            if(stationId != null){
+                var bool = val.Week == weekNum && val.StationId == stationId
+            }else{
+                var bool = val.Week == weekNum
+            }
+            if(bool){
                 if(dataType === '1'){
                     dateNum = weekNum;
                 }else if(dataType=='2'){
@@ -117,8 +128,14 @@ function barChartWeather(){
         });
 //        console.log(maxSum);
         //set x & y domain(x->weather type, y->0 to sum number)
+        var maxY;
+        if(stationId != null){
+            maxY = d3.max(currentArry,function(d) {return parseFloat(d.customer) + parseFloat(d.daily) + parseFloat(d.subscriber) + parseFloat(d.unknown);});
+        }else{
+            maxY = 16.4;
+        }
         x.domain(currentArry.map(function(d){return d.weather;}));
-        y.domain([0,16.4]);
+        y.domain([0,maxY]);
         
         svg.append("g")
                 .attr("class","x axis")

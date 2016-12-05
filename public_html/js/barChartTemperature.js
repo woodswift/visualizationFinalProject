@@ -129,8 +129,14 @@ function barChartTemperature(stationId){
         });
 //        console.log(maxSum);
         //set x & y domain(x->temperature type, y->0 to sum number)
+        var maxY;
+        if(stationId != null){
+            maxY = d3.max(currentArry,function(d) {return parseFloat(d.customer) + parseFloat(d.daily) + parseFloat(d.subscriber) + parseFloat(d.unknown);});
+        }else{
+            maxY = 16.4;
+        }
         x.domain(currentArry.map(function(d){return d.temperature;}));
-        y.domain([0,16.4]);
+        y.domain([0,maxY]);
         
         svg.append("g")
                 .attr("class","x axis")

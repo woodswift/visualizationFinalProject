@@ -27,7 +27,7 @@ var slider = d3.slider().min(1).max(week_index.length).tickValues(week_index).st
 //});
 
 
-var weekNum = "1",dataType = "1";
+var weekNum = "1",dataType = "1",stationId="1001";
 
 d3.select('#slider').call(slider)
     .on("click", function() {
@@ -37,6 +37,9 @@ d3.select('#slider').call(slider)
         barChartTemperature();
         barChartWeather();
         scatterPlotWeekhour();
+        barChartTemperature(stationId);
+        barChartWeather(stationId);
+        scatterPlotWeekhour(stationId)
     }).on("mousedown",function(){
         $(this).data("flag",true);
     })
@@ -49,6 +52,9 @@ $(document).on("mousemove",function(){
         barChartTemperature();
         barChartWeather();
         scatterPlotWeekhour();
+        barChartTemperature(stationId);
+        barChartWeather(stationId);
+        scatterPlotWeekhour(stationId)
     }
 }).on("mouseup",function(){
     $("#slider").data("flag",false);

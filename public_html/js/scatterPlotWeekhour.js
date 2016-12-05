@@ -1,6 +1,6 @@
 scatterPlotWeekhour();
 
-function scatterPlotWeekhour(){
+function scatterPlotWeekhour(stationId){
     var margin = {top:50,right:50,bottom:50,left:90},
         w = 430 - margin.left-margin.right,
         h = 250 - margin.top - margin.bottom;
@@ -32,8 +32,12 @@ function scatterPlotWeekhour(){
             .tickSize(-w,0,0)
             .tickFormat("");
 
-    $("#weekhourScatterPlot").empty();
-    var svg = d3.select("#weekhourScatterPlot").append("svg")
+    var positionId;
+    if(stationId != null) positionId = "#singleWeekhourScatterPlot";
+    else positionId = "#weekhourScatterPlot";
+    
+    $(positionId).empty();
+    var svg = d3.select(positionId).append("svg")
             .attr("width",w + margin.left+margin.right)
             .attr("height",h+margin.top+margin.bottom)
             .append("g")
@@ -51,14 +55,24 @@ function scatterPlotWeekhour(){
         address="Quarter";
     }
     
-    d3.csv("./dataFile/"+address +"_hour_weekend.csv",generateScatterPlot);
+    var fullAddr;
+    if(stationId != null) fullAddr = "Week_hour_weekend_stationId.csv";
+    else fullAddr = address + "_hour_weekend.csv";
+    d3.csv("./dataFile/"+fullAddr,generateScatterPlot);
     
     function generateScatterPlot(data){
         //drag useful data for current week
         var currentArry =[];
 //        console.log(weekNum);
         $.each(data,function(index,val){
-            if(val.Week == weekNum){
+//            console.log("data "+val.StationId);
+//            console.log(stationId);
+            if(stationId != null){
+                var bool = val.Week == weekNum && val.StationId == stationId
+            }else{
+                var bool = val.Week == weekNum
+            }
+            if(bool){
                 
                 if(dataType === '1'){
                     dateNum = weekNum;
@@ -76,7 +90,7 @@ function scatterPlotWeekhour(){
                 
             }
         });
-        //console.log(currentArry);
+//        console.log(currentArry);
         //get the attributes name of each line
         //choose appropriate continents
         color.domain(d3.keys(currentArry[0]).filter(function(key){
