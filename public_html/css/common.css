@@ -1,34 +1,49 @@
-body{
-    font: 10px verdana;
-    text-align: center;
-    font-family: 'Montserrat';
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #D35400 ;
+  
 }
+
+a{
+text-decoration:none;
+color: #C0392B;
+}
+
 .part{
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
-    text-align:left;
-    font-size: 15px;
+    text-align:center;
+    font-size: 20px;
+font-family: 'Montserrat', sans-serif;
     
 }
 .header{
     text-align: center;
     border-bottom: dotted gray 1px;
     padding-bottom: 20px
+	font-family: 'Montserrat', sans-serif;
 }
 .title{
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
 }
 
 .teamMember{
+font-family: 'Montserrat', sans-serif;
     display: inline-block;
     margin-left: 10px;
-    margin-top: 10px;
-    font-size: 15px
+    margin-top: 20px;
+    font-size: 20px;
+    color:#34495E  ;
 }
 .footer{
+font-family: 'Montserrat', sans-serif;
     text-align:center;
     font-size:16px;
     border-top: dotted gray 1px;

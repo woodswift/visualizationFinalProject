@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>InformationVisualization FinalProject</title>
+
+        <style = "text/css">
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            line-height: 20px;
+            color: #fff;
+            background-color: #fff;
+        }
+
+
+
+        </style>
+
+        <title>Information Visualization Final Project</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src = "http://d3js.org/d3.v3.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="./css/common.css"/>
     </head>
-    <body>
+    <body  style="width: 1280px;height:1000px;margin:auto;background-color: #76D7C4;">
         <div class="header">
             <div class="title">INFSCI 2415: Information Visualization</div>
             <div class="title">Final Project</div>
-            <div class="teamMember" style="margin-left: 0px;">Yumeng Lu(YUL139)</div>
-            <div class="teamMember">Fengtao Wu(FEW14)</div>
-            <div class="teamMember">Linghui Liu(LIL103)</div>
-            <div class="teamMember">Anand Varanasi(SKV9)</div>
+            <div class="teamMember" style="margin-left: 0px;">Yumeng Lu (YUL139)</div>
+            <div class="teamMember">Fengtao Wu (FEW14)</div>
+            <div class="teamMember">Linghui Liu (LIL103)</div>
+            <div class="teamMember">Anand Varanasi (SKV9)</div>
+        <br>
+        <br>
         </div>
-        <img src="./img/demo.png" alt="demo" style="width:100%;height:80%;">
+
+        <span class="outer1">
+
+
+
+
+
+        <div class="part" style="margin-top: 0px;">
+        <br>
+            <div style="font-size: 25px;font-weight: bold;"> Visualizing Pittsburgh Healthy Ride Data</div>
+            <div style="margin-top: 10px;">
+               
+                <a href="./demo.html"> Click Here </a> 
+            </div>
+        </div>
+        <div class="part" style="margin-top: 0px;">
+            <div style="font-size: 25px;font-weight: bold;">Document</div>
+            <div style="margin-top: 10px;">
+                <a href="">Final Paper</a> |
+                <a href="">Presentation Slides</a>
+            </div>
+        </div>
+
+       <div id="map" style="width: 100%;height: 30%;"></div>
+        </span>
+       <!-- <img src="./img/demo.png" alt="demo" style="width:100%;height:80%;"> -->
         <div class="part" style="margin-top: 50px;">
             <div style="font-size: 25px;font-weight: bold;">Abstract</div>
             <div style="margin-top: 30px;">123123123123123</div>
         </div>
-        <div class="part" style="margin-top: 50px;">
-            <div style="font-size: 25px;font-weight: bold;">Demo</div>
-            <div style="margin-top: 30px;">
-                Try it online
-                <a href="./demo.html">here</a>
-            </div>
-        </div>
-        <div class="part" style="margin-top: 50px;">
-            <div style="font-size: 25px;font-weight: bold;">Document</div>
-            <div style="margin-top: 30px;">
-                <a href="">Final Paper</a>|
-                <a href="">Presentation Slides</a>
-            </div>
-        </div>
+
         <div class="footer">
             <div>Copyright &copy; Yumeng Lu, Fengtao Wu, Linghui Liu, Anand Varanasi All Right Reserved.</div>
             <div>EMAIL: yul139@pitt.edu, few14@pitt.edu, lil103@pitt.edu, skv9@pitt.edu</div>
         </div>
+
+
+
+
+        <script type="text/javascript" src="./js/jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+        <script type="text/javascript" src="./js/map.js"></script>
+        <script type="text/javascript" src="./js/d3.slider.js"></script>
+        <script type="text/javascript" src="./js/slider.js"></script>
+        <script type="text/javascript" src="./js/controlTab.js"></script>
+        <script type="text/javascript" src="./js/readTop5Data.js"></script>
+        <script type="text/javascript" src="./js/barChartTemperature.js"></script>
+        <script type="text/javascript" src="./js/barChartWeather.js"></script>
+        <script type="text/javascript" src="./js/scatterPlotWeekhour.js"></script>
+
+
+
+
+
     </body>
 </html>
