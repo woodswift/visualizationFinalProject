@@ -117,6 +117,8 @@
 
 .leaflet-top .legend{
     font-weight:bold;
+    background-color: #f2efe9;
+    padding: 5px 5px 5px 5px;
 }
 
 .hide{
