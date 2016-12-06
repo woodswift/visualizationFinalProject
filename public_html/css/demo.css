@@ -17,6 +17,7 @@
     margin-right: 30px;
     margin-top: 20px;
     float: right;
+    text-align: right;
 }
 
 .scroll{
@@ -44,6 +45,15 @@
 #slider{
     margin-top: 20px;
     margin-left: 5px;
+}
+
+.mapDescription{
+    width: 99%;
+    height: 3%;
+    font-size: 11px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 #chart,#singleChart{
