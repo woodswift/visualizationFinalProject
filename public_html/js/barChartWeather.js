@@ -194,14 +194,8 @@ function barChartWeather(stationId){
 
                     //Get this bar's x/y values, then augment for the tooltip
                     var left = parseFloat($("body").css("width"))*0.65 + margin.left;
-                    var top;
-                    if(stationId != null){
-                        top = 40+30+15+22+15+20+200 - 25;
-                    }else{
-                        top = 40+40+22+20+22+20+200 - 25;
-                    }
                     var xPosition = parseFloat($(this).attr("val")) + x.rangeBand() / 2 + left;
-                    var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h/2 + top;
+                    var yPosition = $(this).offset().top-80;
 //                    console.log(xPosition);
                     //Update the tooltip position and value
                     d3.select("#tooltip")

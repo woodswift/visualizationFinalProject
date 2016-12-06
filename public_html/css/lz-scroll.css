@@ -1,0 +1,29 @@
+
+
+.lzscroll-default-Y{
+	/* Position */
+	position: absolute;
+	right: 5px;
+	border-radius:6px; 
+
+	/* Size */
+	width: 8px;
+
+	/* Style */
+	background-color: lightgray;
+
+}
+
+.lzscroll-default-X{
+	/* Position */
+	position: absolute;
+	bottom: 0;
+	border-radius:6px; 
+
+	/* Size */
+	height: 8px;
+
+	/* Style */
+	background-color: #ddd;
+
+}

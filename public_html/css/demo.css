@@ -18,6 +18,14 @@
     margin-top: 20px;
     float: right;
 }
+
+.scroll{
+    width:98%;
+    height:490px;
+    overflow: hidden;
+    margin-top: 10px
+}
+
 .left{
     width: 65%;
     height: 100%;
@@ -106,7 +114,7 @@
 }
 
 #return{
-    margin-left: 415px;
+    margin-left: 400px;
     width:30px; 
     height:30px;
     background: url(../img/return30.png);

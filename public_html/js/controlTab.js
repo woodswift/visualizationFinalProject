@@ -29,3 +29,43 @@ function clickEvent(){
 }
 
 
+//$(document).ready(function()
+//{
+//    var $scrollbar  = $('#scrollbar')
+//    ,   $overview   = $scrollbar.find(".overview")
+//    ,   loadingData = false
+//    ;
+//
+//    $scrollbar.tinyscrollbar({thumbSize : 20});
+//
+//    var scrollbarData = $scrollbar.data("plugin_tinyscrollbar");
+//
+//    $scrollbar.on("move", function()
+//    {
+//        console.log("success");
+//        // The threshold will enable us to start loading the text before we reach the end.
+//        //
+//        var threshold       = 0.9
+//        ,   positionCurrent = scrollbarData.contentPosition + scrollbarData.viewportSize
+//        ,   positionEnd     = scrollbarData.contentSize * threshold
+//        ;
+//
+//        // Check if have reached the "end" and that we arent allready in the process of loading new data.
+//        //
+//        if(!loadingData && positionCurrent >= positionEnd)
+//        {
+//            loadingData = true;
+//
+//            $.getJSON("data.json", function(data)
+//            {
+//                loadingData = false;
+//
+//                $overview.append(data.text);
+//
+//                scrollbarData.update("relative");
+//            });
+//        }
+//    });
+//});
+
+
