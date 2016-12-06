@@ -31,7 +31,7 @@ function createMap(arrHighlight,forStation){
         
         //add new marker
         for(var i =0;i<arr.length;i++){
-            var popUpHtml = '<b>'+arr[i].Name+'</b><br/><b>StationId: </b>'+arr[i].id+'<br/><b>RackQnty: </b>' +arr[i].RackQnty+'<br/><br/><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>';
+            var popUpHtml = '<b>'+arr[i].Name+'</b><br/><b>Station ID: </b>'+arr[i].id+'<br/><b>Rack Quantity: </b>' +arr[i].RackQnty+'<br/><br/><button style="margin:auto" id='+arr[i].id+' onclick="showDetail(this)">Show details</button>';
             if(match(arr[i].id,arrHighlight)){
                 var marker = new L.Marker(new L.latLng(arr[i].Latitude, arr[i].Longitude),{icon: myIcon,alt:arr[i].id});
                 map.addLayer(marker);

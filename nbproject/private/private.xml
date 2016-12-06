@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/css/chart.css</file>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/demo.html</file>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/dataFile/Week_hour_weekend.csv</file>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/js/scatterPlotWeekhour.js</file>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/js/barChartTemperature.js</file>
-            <file>file:/Users/admin/NetBeansProjects/visualizationFinalProject/public_html/css/demo.css</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
