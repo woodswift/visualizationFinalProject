@@ -245,7 +245,8 @@ function barChartWeather(stationId){
             .attr("y",-30)
             .attr("text-anchor","middle")
             .style("font-size","13px")
-            .text(function(d){if(address=="Month"){
+            .text(function(d){if(showStationDetail) return("Average Daily Ride Counts Versus Weather in Week "+ weekNum);
+                              if(address=="Month"){
                                 return("Average Daily Ride Counts Versus Weather in "+ d.dateNum)}
                               else{
                                 return("Average Daily Ride Counts Versus Weather in "+ address + " " + d.dateNum)}

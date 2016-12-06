@@ -235,7 +235,10 @@ function scatterPlotWeekhour(stationId){
                 .attr("y",-30)
                 .attr("text-anchor","middle")
                 .style("font-size","13px")
-                .text(function(d){if(address=="Month"){
+                .text(function(d){
+                                  if(showStationDetail) return("Temporal Ride Patterns in the Course of Day During Week "+ weekNum);
+
+                                  if(address=="Month"){
                                     return("Temporal Ride Patterns in the Course of Day During "+ d.dateNum)}
                                   else{
                                     return("Temporal Ride Patterns in the Course of Day During "+ address + " " + d.dateNum)}
