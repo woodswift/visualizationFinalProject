@@ -194,8 +194,9 @@ function barChartTemperature(stationId){
                     });
                     
                     //Get this bar's x/y values, then augment for the tooltip
-                    var left = parseFloat($("body").css("width"))*0.65 + margin.left;
-                    var xPosition = parseFloat($(this).attr("val")) + x.rangeBand() / 2 + left;
+//                    var left = parseFloat($("body").css("width"))*0.65 + margin.left;
+//                    var xPosition = parseFloat($(this).attr("val")) + x.rangeBand() / 2 + left;
+                    var xPosition = $(this).offset().left- x.rangeBand() / 2;
                     var yPosition = $(this).offset().top-80;
                   
 //                            parseFloat(d3.select(this).attr("y")) / 2 + top;
